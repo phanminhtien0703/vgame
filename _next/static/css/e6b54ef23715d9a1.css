@@ -1,5 +1,7 @@
-@import"https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap";:root {
-    --main: rgba(0,101,255,1);
+@import"https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap";
+
+:root {
+    --main: rgba(0, 101, 255, 1);
     --color1: #e13f45;
     --color2: #333333;
     --color3: #808080;
@@ -14,31 +16,31 @@
 }
 
 a {
-    text-decoration: none!important
+    text-decoration: none !important
 }
 
 .error {
-    color: var(--colorerror)!important
+    color: var(--colorerror) !important
 }
 
 .green {
-    color: var(--colorok)!important
+    color: var(--colorok) !important
 }
 
 .gold {
-    color: var(--color1)!important
+    color: var(--color1) !important
 }
 
 .blue {
-    color: var(--colorlink)!important
+    color: var(--colorlink) !important
 }
 
 .main {
-    color: var(--color1)!important
+    color: var(--color1) !important
 }
 
 body {
-    font-family: Manrope,sans-serif;
+    font-family: Manrope, sans-serif;
     font-size: 14px;
     background: url(/images/pattern-bg.png) fixed top;
     background-size: cover;
@@ -62,14 +64,19 @@ a {
 }
 
 button {
-    transition: all .7s ease-in-out!important
+    transition: all .7s ease-in-out !important
 }
 
 a:hover {
     text-decoration: none
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0
 }
 
@@ -99,7 +106,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .line-height-0 {
-    line-height: inherit!important
+    line-height: inherit !important
 }
 
 .img-cover {
@@ -112,7 +119,8 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-line-clamp: 1
 }
 
-.text-line-clamp-1,.text-line-clamp-2 {
+.text-line-clamp-1,
+.text-line-clamp-2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden
@@ -126,7 +134,8 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-line-clamp: 3
 }
 
-.text-line-clamp-3,.text-line-clamp-5 {
+.text-line-clamp-3,
+.text-line-clamp-5 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden
@@ -169,7 +178,8 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 24.3px
 }
 
-.message-error,.title-path {
+.message-error,
+.title-path {
     font-size: 18px;
     letter-spacing: -.02em
 }
@@ -210,11 +220,36 @@ h1,h2,h3,h4,h5,h6 {
     animation: activePagination .3s linear forwards
 }
 
-.wrapper-slider .item-banner {
-    max-height: 300px;
-    height: 300px;
-    display: block
+.wrapper-slider {
+    margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+    .wrapper-slider {
+        width: 768px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .wrapper-slider {
+        width: 400px !important;
+    }
+}
+
+.wrapper-slider .item-banner {
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.wrapper-slider .item-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 
 .wrapper-slider .item-banner img {
     aspect-ratio: 16/9
@@ -234,19 +269,27 @@ h1,h2,h3,h4,h5,h6 {
     animation: activePagination .3s linear forwards
 }
 
-.list-product .swiper-slide,.list-product .swiper-slide:nth-child(2n),.list-product .swiper-slide:nth-child(3n) {
-    width: 20%!important
+.list-product .swiper-slide,
+.list-product .swiper-slide:nth-child(2n),
+.list-product .swiper-slide:nth-child(3n) {
+    width: 20% !important
 }
 
 @media(max-width: 540px) {
-    .list-product .swiper-slide,.list-product .swiper-slide:nth-child(2n),.list-product .swiper-slide:nth-child(3n) {
-        width:40%!important
+
+    .list-product .swiper-slide,
+    .list-product .swiper-slide:nth-child(2n),
+    .list-product .swiper-slide:nth-child(3n) {
+        width: 40% !important
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
-    .list-product .swiper-slide,.list-product .swiper-slide:nth-child(2n),.list-product .swiper-slide:nth-child(3n) {
-        width:25%!important
+
+    .list-product .swiper-slide,
+    .list-product .swiper-slide:nth-child(2n),
+    .list-product .swiper-slide:nth-child(3n) {
+        width: 25% !important
     }
 }
 
@@ -266,7 +309,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .item-product .content-item-product {
     padding: 8px 0 12px;
-    background: rgba(41,43,45,.5019607843)
+    background: rgba(41, 43, 45, .5019607843)
 }
 
 .item-product .content-item-product img {
@@ -284,20 +327,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .list-product-info .swiper-slide {
-    width: 68%!important
+    width: 68% !important
 }
 
 .list-product-info .swiper-slide img {
     width: 100%
 }
 
-.list-product-info .swiper-slide:nth-child(2n),.list-product-info .swiper-slide:nth-child(3n) {
-    width: 68%!important
+.list-product-info .swiper-slide:nth-child(2n),
+.list-product-info .swiper-slide:nth-child(3n) {
+    width: 68% !important
 }
 
 .item-product-info {
     border-radius: 8px;
-    background-color: var(--Grey-1,rgb(249,249,249));
+    background-color: var(--Grey-1, rgb(249, 249, 249));
     overflow: hidden
 }
 
@@ -306,23 +350,25 @@ h1,h2,h3,h4,h5,h6 {
     overflow: hidden
 }
 
-.item-product-info .wrapper-product .avatar img,.item-product-info .wrapper-product iframe {
+.item-product-info .wrapper-product .avatar img,
+.item-product-info .wrapper-product iframe {
     aspect-ratio: 16/9
 }
 
 .item-product-info .wrapper-play {
     width: 56px;
     height: 56px;
-    background: rgba(19,19,19,.7);
+    background: rgba(19, 19, 19, .7);
     border-radius: 999px;
     cursor: pointer
 }
 
-.item-product-info .wrapper-play,.item-product-info .wrapper-play img {
+.item-product-info .wrapper-play,
+.item-product-info .wrapper-play img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
 }
 
 .item-product-info .content-product-info {
@@ -398,9 +444,11 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 0
 }
 
-.nav-wrapper .swiper-slide,.nav-wrapper .swiper-slide:nth-child(2n),.nav-wrapper .swiper-slide:nth-child(3n) {
-    width: -moz-fit-content!important;
-    width: fit-content!important
+.nav-wrapper .swiper-slide,
+.nav-wrapper .swiper-slide:nth-child(2n),
+.nav-wrapper .swiper-slide:nth-child(3n) {
+    width: -moz-fit-content !important;
+    width: fit-content !important
 }
 
 .nav-wrapper li {
@@ -419,18 +467,20 @@ h1,h2,h3,h4,h5,h6 {
     border-color: var(--main)
 }
 
-.nav-wrapper li.active a,.nav-wrapper li.active span {
+.nav-wrapper li.active a,
+.nav-wrapper li.active span {
     color: currentColor
 }
 
-.nav-wrapper li a,.nav-wrapper li span {
+.nav-wrapper li a,
+.nav-wrapper li span {
     position: relative;
     color: #6c727f;
     font-weight: 600
 }
 
 .hover-white:hover {
-    color: var(--whitecolor)!important;
+    color: var(--whitecolor) !important;
     transition: all .3s
 }
 
@@ -446,7 +496,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .news-in-home .news-title a {
-    color: #6c727f!important;
+    color: #6c727f !important;
     font-size: 12px;
     line-height: 16.8px;
     font-weight: 400
@@ -503,13 +553,13 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(min-width: 541px)and (max-width:768px) {
     .card-news {
-        border-radius:8px!important
+        border-radius: 8px !important
     }
 }
 
 @media(max-width: 540px) {
     .card-news {
-        border-radius:8px 8px!important
+        border-radius: 8px 8px !important
     }
 }
 
@@ -540,7 +590,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .card-news .card-news-content {
     padding: 28px 12px 32px;
-    background: rgba(41,43,45,.5019607843);
+    background: rgba(41, 43, 45, .5019607843);
     display: flex;
     flex-direction: column;
     color: #f3f3f3
@@ -577,7 +627,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
     line-height: 32.4px;
     letter-spacing: -.02em;
-    color: var(--black-80,rgb(58,58,59))
+    color: var(--black-80, rgb(58, 58, 59))
 }
 
 .list-Relate .btn-relate {
@@ -603,9 +653,11 @@ h1,h2,h3,h4,h5,h6 {
     color: #6c727f
 }
 
-.list-Relate .swiper-slide,.list-Relate .swiper-slide:nth-child(2n),.list-Relate .swiper-slide:nth-child(3n) {
-    width: -moz-fit-content!important;
-    width: fit-content!important
+.list-Relate .swiper-slide,
+.list-Relate .swiper-slide:nth-child(2n),
+.list-Relate .swiper-slide:nth-child(3n) {
+    width: -moz-fit-content !important;
+    width: fit-content !important
 }
 
 .mainheader {
@@ -670,7 +722,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .mainheader .right-header .search-btn {
-        margin-right:10px
+        margin-right: 10px
     }
 }
 
@@ -699,7 +751,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(min-width: 500px) {
     .mainheader .right-header .right-login .topinfo .u_info {
-        max-width:150px
+        max-width: 150px
     }
 }
 
@@ -736,7 +788,7 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     height: 100%;
     z-index: 9999
 }
@@ -786,12 +838,14 @@ h1,h2,h3,h4,h5,h6 {
     padding: 16px 24px
 }
 
-.sidebar .sidebar-content .drawerSubItemGift,.sidebar .sidebar-content .drawerSubItemNap {
+.sidebar .sidebar-content .drawerSubItemGift,
+.sidebar .sidebar-content .drawerSubItemNap {
     display: flex;
     flex-direction: column
 }
 
-.sidebar .sidebar-content .drawerSubItemGift .subItemLink,.sidebar .sidebar-content .drawerSubItemNap .subItemLink {
+.sidebar .sidebar-content .drawerSubItemGift .subItemLink,
+.sidebar .sidebar-content .drawerSubItemNap .subItemLink {
     padding: 16px 32px;
     font-size: 16px;
     line-height: 22.4px;
@@ -801,7 +855,8 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 1px solid #fff
 }
 
-.sidebar .sidebar-content .drawerSubItemGift .subItemLink:last-child,.sidebar .sidebar-content .drawerSubItemNap .subItemLink:last-child {
+.sidebar .sidebar-content .drawerSubItemGift .subItemLink:last-child,
+.sidebar .sidebar-content .drawerSubItemNap .subItemLink:last-child {
     border-bottom: none
 }
 
@@ -873,7 +928,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .sidebar .sidebar-content ul li:hover label svg.iconAccount path {
-    fill: rgba(0,0,0,0);
+    fill: rgba(0, 0, 0, 0);
     stroke: #fff
 }
 
@@ -939,7 +994,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .search-app .form-search .input-search {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     flex: 1 1;
     width: 100%;
     height: 100%;
@@ -1002,7 +1057,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .popup-hotline {
-        max-width:375.15px;
+        max-width: 375.15px;
         height: 150px
     }
 }
@@ -1024,7 +1079,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .popup-hotline .close-popup {
-        right:-5%
+        right: -5%
     }
 }
 
@@ -1050,7 +1105,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-family: Rye;
     color: var(--whitecolor);
-    filter: drop-shadow(2px 4px rgba(0,0,0,.349))
+    filter: drop-shadow(2px 4px rgba(0, 0, 0, .349))
 }
 
 .popup-hotline .wrapper-popup-content button {
@@ -1071,7 +1126,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #cfc69f;
     font-weight: 500;
     text-shadow: #f88600 1px 0 15px;
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .lastest-news-page {
@@ -1088,7 +1143,7 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
     border-radius: 8px;
     text-align: center;
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .lastest-news-page .btn-next {
@@ -1122,7 +1177,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 767px) {
     .lastest-news-page button {
-        width:24px;
+        width: 24px;
         height: 24px;
         font-size: 10px
     }
@@ -1134,9 +1189,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .app_popup-video {
-    opacity: 1!important;
+    opacity: 1 !important;
     display: block;
-    background: rgba(0,0,0,.5)
+    background: rgba(0, 0, 0, .5)
 }
 
 .app_popup-video .modal-dialog {
@@ -1149,7 +1204,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     justify-content: center;
     top: 50%;
-    transform: translateY(-50%)!important
+    transform: translateY(-50%) !important
 }
 
 .app_popup-video .modal-dialog .modal-content {
@@ -1160,13 +1215,13 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .app_popup-video .modal-dialog .modal-content {
-        height:370px
+        height: 370px
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
     .app_popup-video .modal-dialog .modal-content {
-        height:440px
+        height: 440px
     }
 }
 
@@ -1177,7 +1232,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .app_popup-video .modal-dialog .modal-content .modal-header .close {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: none
 }
 
@@ -1187,14 +1242,14 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .app_popup-video .modal-dialog .modal-content .modal-header .close img {
-        width:43px;
+        width: 43px;
         height: 42px
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
     .app_popup-video .modal-dialog .modal-content .modal-header .close img {
-        width:43px;
+        width: 43px;
         height: 42px
     }
 }
@@ -1323,7 +1378,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .wrapper-game {
-        justify-content:space-between
+        justify-content: space-between
     }
 }
 
@@ -1333,13 +1388,13 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(min-width: 541px)and (max-width:768px) {
     .wrapper-game>div {
-        width:calc((100% - 48px)/3)
+        width: calc((100% - 48px)/3)
     }
 }
 
 @media(max-width: 540px) {
     .wrapper-game>div {
-        width:calc((100% - 24px)/2)
+        width: calc((100% - 24px)/2)
     }
 }
 
@@ -1379,7 +1434,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(min-width: 541px)and (max-width:768px) {
     .wrapper-detail-game .wrapper-btn a {
-        width:auto;
+        width: auto;
         height: auto;
         min-width: 130px
     }
@@ -1387,7 +1442,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width: 540px) {
     .wrapper-detail-game .wrapper-btn a {
-        width:auto;
+        width: auto;
         min-width: 80px;
         height: auto
     }
@@ -1414,7 +1469,7 @@ main {
 }
 
 .container {
-    max-width: 768px!important
+    max-width: 768px !important
 }
 
 .wrapper {
@@ -1478,14 +1533,15 @@ header {
     left: -110%
 }
 
-.user-content .hoivien:after,.user-content .hoivien:before {
+.user-content .hoivien:after,
+.user-content .hoivien:before {
     content: "";
     position: absolute;
     width: 200vh;
     height: 200vh;
     border-radius: 100vh;
     z-index: 1;
-    background-color: rgba(255,255,255,.1)
+    background-color: rgba(255, 255, 255, .1)
 }
 
 .user-content .hoivien:after {
@@ -1577,7 +1633,7 @@ header {
 .chucnang ul.chucnang-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding-left: 0;
     margin-bottom: 0
 }
@@ -1690,21 +1746,222 @@ p a.banner img {
     border-bottom: 1px solid #e5e5e5
 }
 
-.canhbao .c100.p100 .slice,.canhbao .c100.p51 .slice,.canhbao .c100.p52 .slice,.canhbao .c100.p53 .slice,.canhbao .c100.p54 .slice,.canhbao .c100.p55 .slice,.canhbao .c100.p56 .slice,.canhbao .c100.p57 .slice,.canhbao .c100.p58 .slice,.canhbao .c100.p59 .slice,.canhbao .c100.p60 .slice,.canhbao .c100.p61 .slice,.canhbao .c100.p62 .slice,.canhbao .c100.p63 .slice,.canhbao .c100.p64 .slice,.canhbao .c100.p65 .slice,.canhbao .c100.p66 .slice,.canhbao .c100.p67 .slice,.canhbao .c100.p68 .slice,.canhbao .c100.p69 .slice,.canhbao .c100.p70 .slice,.canhbao .c100.p71 .slice,.canhbao .c100.p72 .slice,.canhbao .c100.p73 .slice,.canhbao .c100.p74 .slice,.canhbao .c100.p75 .slice,.canhbao .c100.p76 .slice,.canhbao .c100.p77 .slice,.canhbao .c100.p78 .slice,.canhbao .c100.p79 .slice,.canhbao .c100.p80 .slice,.canhbao .c100.p81 .slice,.canhbao .c100.p82 .slice,.canhbao .c100.p83 .slice,.canhbao .c100.p84 .slice,.canhbao .c100.p85 .slice,.canhbao .c100.p86 .slice,.canhbao .c100.p87 .slice,.canhbao .c100.p88 .slice,.canhbao .c100.p89 .slice,.canhbao .c100.p90 .slice,.canhbao .c100.p91 .slice,.canhbao .c100.p92 .slice,.canhbao .c100.p93 .slice,.canhbao .c100.p94 .slice,.canhbao .c100.p95 .slice,.canhbao .c100.p96 .slice,.canhbao .c100.p97 .slice,.canhbao .c100.p98 .slice,.canhbao .c100.p99 .slice,.canhbao .rect-auto {
-    clip: rect(auto,auto,auto,auto)
+.canhbao .c100.p100 .slice,
+.canhbao .c100.p51 .slice,
+.canhbao .c100.p52 .slice,
+.canhbao .c100.p53 .slice,
+.canhbao .c100.p54 .slice,
+.canhbao .c100.p55 .slice,
+.canhbao .c100.p56 .slice,
+.canhbao .c100.p57 .slice,
+.canhbao .c100.p58 .slice,
+.canhbao .c100.p59 .slice,
+.canhbao .c100.p60 .slice,
+.canhbao .c100.p61 .slice,
+.canhbao .c100.p62 .slice,
+.canhbao .c100.p63 .slice,
+.canhbao .c100.p64 .slice,
+.canhbao .c100.p65 .slice,
+.canhbao .c100.p66 .slice,
+.canhbao .c100.p67 .slice,
+.canhbao .c100.p68 .slice,
+.canhbao .c100.p69 .slice,
+.canhbao .c100.p70 .slice,
+.canhbao .c100.p71 .slice,
+.canhbao .c100.p72 .slice,
+.canhbao .c100.p73 .slice,
+.canhbao .c100.p74 .slice,
+.canhbao .c100.p75 .slice,
+.canhbao .c100.p76 .slice,
+.canhbao .c100.p77 .slice,
+.canhbao .c100.p78 .slice,
+.canhbao .c100.p79 .slice,
+.canhbao .c100.p80 .slice,
+.canhbao .c100.p81 .slice,
+.canhbao .c100.p82 .slice,
+.canhbao .c100.p83 .slice,
+.canhbao .c100.p84 .slice,
+.canhbao .c100.p85 .slice,
+.canhbao .c100.p86 .slice,
+.canhbao .c100.p87 .slice,
+.canhbao .c100.p88 .slice,
+.canhbao .c100.p89 .slice,
+.canhbao .c100.p90 .slice,
+.canhbao .c100.p91 .slice,
+.canhbao .c100.p92 .slice,
+.canhbao .c100.p93 .slice,
+.canhbao .c100.p94 .slice,
+.canhbao .c100.p95 .slice,
+.canhbao .c100.p96 .slice,
+.canhbao .c100.p97 .slice,
+.canhbao .c100.p98 .slice,
+.canhbao .c100.p99 .slice,
+.canhbao .rect-auto {
+    clip: rect(auto, auto, auto, auto)
 }
 
-.canhbao .c100 .bar,.canhbao .c100.p100 .fill,.canhbao .c100.p51 .fill,.canhbao .c100.p52 .fill,.canhbao .c100.p53 .fill,.canhbao .c100.p54 .fill,.canhbao .c100.p55 .fill,.canhbao .c100.p56 .fill,.canhbao .c100.p57 .fill,.canhbao .c100.p58 .fill,.canhbao .c100.p59 .fill,.canhbao .c100.p60 .fill,.canhbao .c100.p61 .fill,.canhbao .c100.p62 .fill,.canhbao .c100.p63 .fill,.canhbao .c100.p64 .fill,.canhbao .c100.p65 .fill,.canhbao .c100.p66 .fill,.canhbao .c100.p67 .fill,.canhbao .c100.p68 .fill,.canhbao .c100.p69 .fill,.canhbao .c100.p70 .fill,.canhbao .c100.p71 .fill,.canhbao .c100.p72 .fill,.canhbao .c100.p73 .fill,.canhbao .c100.p74 .fill,.canhbao .c100.p75 .fill,.canhbao .c100.p76 .fill,.canhbao .c100.p77 .fill,.canhbao .c100.p78 .fill,.canhbao .c100.p79 .fill,.canhbao .c100.p80 .fill,.canhbao .c100.p81 .fill,.canhbao .c100.p82 .fill,.canhbao .c100.p83 .fill,.canhbao .c100.p84 .fill,.canhbao .c100.p85 .fill,.canhbao .c100.p86 .fill,.canhbao .c100.p87 .fill,.canhbao .c100.p88 .fill,.canhbao .c100.p89 .fill,.canhbao .c100.p90 .fill,.canhbao .c100.p91 .fill,.canhbao .c100.p92 .fill,.canhbao .c100.p93 .fill,.canhbao .c100.p94 .fill,.canhbao .c100.p95 .fill,.canhbao .c100.p96 .fill,.canhbao .c100.p97 .fill,.canhbao .c100.p98 .fill,.canhbao .c100.p99 .fill,.canhbao .pie {
+.canhbao .c100 .bar,
+.canhbao .c100.p100 .fill,
+.canhbao .c100.p51 .fill,
+.canhbao .c100.p52 .fill,
+.canhbao .c100.p53 .fill,
+.canhbao .c100.p54 .fill,
+.canhbao .c100.p55 .fill,
+.canhbao .c100.p56 .fill,
+.canhbao .c100.p57 .fill,
+.canhbao .c100.p58 .fill,
+.canhbao .c100.p59 .fill,
+.canhbao .c100.p60 .fill,
+.canhbao .c100.p61 .fill,
+.canhbao .c100.p62 .fill,
+.canhbao .c100.p63 .fill,
+.canhbao .c100.p64 .fill,
+.canhbao .c100.p65 .fill,
+.canhbao .c100.p66 .fill,
+.canhbao .c100.p67 .fill,
+.canhbao .c100.p68 .fill,
+.canhbao .c100.p69 .fill,
+.canhbao .c100.p70 .fill,
+.canhbao .c100.p71 .fill,
+.canhbao .c100.p72 .fill,
+.canhbao .c100.p73 .fill,
+.canhbao .c100.p74 .fill,
+.canhbao .c100.p75 .fill,
+.canhbao .c100.p76 .fill,
+.canhbao .c100.p77 .fill,
+.canhbao .c100.p78 .fill,
+.canhbao .c100.p79 .fill,
+.canhbao .c100.p80 .fill,
+.canhbao .c100.p81 .fill,
+.canhbao .c100.p82 .fill,
+.canhbao .c100.p83 .fill,
+.canhbao .c100.p84 .fill,
+.canhbao .c100.p85 .fill,
+.canhbao .c100.p86 .fill,
+.canhbao .c100.p87 .fill,
+.canhbao .c100.p88 .fill,
+.canhbao .c100.p89 .fill,
+.canhbao .c100.p90 .fill,
+.canhbao .c100.p91 .fill,
+.canhbao .c100.p92 .fill,
+.canhbao .c100.p93 .fill,
+.canhbao .c100.p94 .fill,
+.canhbao .c100.p95 .fill,
+.canhbao .c100.p96 .fill,
+.canhbao .c100.p97 .fill,
+.canhbao .c100.p98 .fill,
+.canhbao .c100.p99 .fill,
+.canhbao .pie {
     position: absolute;
     border: .08em solid var(--colorerror);
     width: .84em;
     height: .84em;
-    clip: rect(0,.5em,1em,0);
+    clip: rect(0, .5em, 1em, 0);
     border-radius: 50%;
     transform: rotate(0deg)
 }
 
-.canhbao .c100.p100 .bar:after,.canhbao .c100.p100 .fill,.canhbao .c100.p51 .bar:after,.canhbao .c100.p51 .fill,.canhbao .c100.p52 .bar:after,.canhbao .c100.p52 .fill,.canhbao .c100.p53 .bar:after,.canhbao .c100.p53 .fill,.canhbao .c100.p54 .bar:after,.canhbao .c100.p54 .fill,.canhbao .c100.p55 .bar:after,.canhbao .c100.p55 .fill,.canhbao .c100.p56 .bar:after,.canhbao .c100.p56 .fill,.canhbao .c100.p57 .bar:after,.canhbao .c100.p57 .fill,.canhbao .c100.p58 .bar:after,.canhbao .c100.p58 .fill,.canhbao .c100.p59 .bar:after,.canhbao .c100.p59 .fill,.canhbao .c100.p60 .bar:after,.canhbao .c100.p60 .fill,.canhbao .c100.p61 .bar:after,.canhbao .c100.p61 .fill,.canhbao .c100.p62 .bar:after,.canhbao .c100.p62 .fill,.canhbao .c100.p63 .bar:after,.canhbao .c100.p63 .fill,.canhbao .c100.p64 .bar:after,.canhbao .c100.p64 .fill,.canhbao .c100.p65 .bar:after,.canhbao .c100.p65 .fill,.canhbao .c100.p66 .bar:after,.canhbao .c100.p66 .fill,.canhbao .c100.p67 .bar:after,.canhbao .c100.p67 .fill,.canhbao .c100.p68 .bar:after,.canhbao .c100.p68 .fill,.canhbao .c100.p69 .bar:after,.canhbao .c100.p69 .fill,.canhbao .c100.p70 .bar:after,.canhbao .c100.p70 .fill,.canhbao .c100.p71 .bar:after,.canhbao .c100.p71 .fill,.canhbao .c100.p72 .bar:after,.canhbao .c100.p72 .fill,.canhbao .c100.p73 .bar:after,.canhbao .c100.p73 .fill,.canhbao .c100.p74 .bar:after,.canhbao .c100.p74 .fill,.canhbao .c100.p75 .bar:after,.canhbao .c100.p75 .fill,.canhbao .c100.p76 .bar:after,.canhbao .c100.p76 .fill,.canhbao .c100.p77 .bar:after,.canhbao .c100.p77 .fill,.canhbao .c100.p78 .bar:after,.canhbao .c100.p78 .fill,.canhbao .c100.p79 .bar:after,.canhbao .c100.p79 .fill,.canhbao .c100.p80 .bar:after,.canhbao .c100.p80 .fill,.canhbao .c100.p81 .bar:after,.canhbao .c100.p81 .fill,.canhbao .c100.p82 .bar:after,.canhbao .c100.p82 .fill,.canhbao .c100.p83 .bar:after,.canhbao .c100.p83 .fill,.canhbao .c100.p84 .bar:after,.canhbao .c100.p84 .fill,.canhbao .c100.p85 .bar:after,.canhbao .c100.p85 .fill,.canhbao .c100.p86 .bar:after,.canhbao .c100.p86 .fill,.canhbao .c100.p87 .bar:after,.canhbao .c100.p87 .fill,.canhbao .c100.p88 .bar:after,.canhbao .c100.p88 .fill,.canhbao .c100.p89 .bar:after,.canhbao .c100.p89 .fill,.canhbao .c100.p90 .bar:after,.canhbao .c100.p90 .fill,.canhbao .c100.p91 .bar:after,.canhbao .c100.p91 .fill,.canhbao .c100.p92 .bar:after,.canhbao .c100.p92 .fill,.canhbao .c100.p93 .bar:after,.canhbao .c100.p93 .fill,.canhbao .c100.p94 .bar:after,.canhbao .c100.p94 .fill,.canhbao .c100.p95 .bar:after,.canhbao .c100.p95 .fill,.canhbao .c100.p96 .bar:after,.canhbao .c100.p96 .fill,.canhbao .c100.p97 .bar:after,.canhbao .c100.p97 .fill,.canhbao .c100.p98 .bar:after,.canhbao .c100.p98 .fill,.canhbao .c100.p99 .bar:after,.canhbao .c100.p99 .fill,.canhbao .pie-fill {
+.canhbao .c100.p100 .bar:after,
+.canhbao .c100.p100 .fill,
+.canhbao .c100.p51 .bar:after,
+.canhbao .c100.p51 .fill,
+.canhbao .c100.p52 .bar:after,
+.canhbao .c100.p52 .fill,
+.canhbao .c100.p53 .bar:after,
+.canhbao .c100.p53 .fill,
+.canhbao .c100.p54 .bar:after,
+.canhbao .c100.p54 .fill,
+.canhbao .c100.p55 .bar:after,
+.canhbao .c100.p55 .fill,
+.canhbao .c100.p56 .bar:after,
+.canhbao .c100.p56 .fill,
+.canhbao .c100.p57 .bar:after,
+.canhbao .c100.p57 .fill,
+.canhbao .c100.p58 .bar:after,
+.canhbao .c100.p58 .fill,
+.canhbao .c100.p59 .bar:after,
+.canhbao .c100.p59 .fill,
+.canhbao .c100.p60 .bar:after,
+.canhbao .c100.p60 .fill,
+.canhbao .c100.p61 .bar:after,
+.canhbao .c100.p61 .fill,
+.canhbao .c100.p62 .bar:after,
+.canhbao .c100.p62 .fill,
+.canhbao .c100.p63 .bar:after,
+.canhbao .c100.p63 .fill,
+.canhbao .c100.p64 .bar:after,
+.canhbao .c100.p64 .fill,
+.canhbao .c100.p65 .bar:after,
+.canhbao .c100.p65 .fill,
+.canhbao .c100.p66 .bar:after,
+.canhbao .c100.p66 .fill,
+.canhbao .c100.p67 .bar:after,
+.canhbao .c100.p67 .fill,
+.canhbao .c100.p68 .bar:after,
+.canhbao .c100.p68 .fill,
+.canhbao .c100.p69 .bar:after,
+.canhbao .c100.p69 .fill,
+.canhbao .c100.p70 .bar:after,
+.canhbao .c100.p70 .fill,
+.canhbao .c100.p71 .bar:after,
+.canhbao .c100.p71 .fill,
+.canhbao .c100.p72 .bar:after,
+.canhbao .c100.p72 .fill,
+.canhbao .c100.p73 .bar:after,
+.canhbao .c100.p73 .fill,
+.canhbao .c100.p74 .bar:after,
+.canhbao .c100.p74 .fill,
+.canhbao .c100.p75 .bar:after,
+.canhbao .c100.p75 .fill,
+.canhbao .c100.p76 .bar:after,
+.canhbao .c100.p76 .fill,
+.canhbao .c100.p77 .bar:after,
+.canhbao .c100.p77 .fill,
+.canhbao .c100.p78 .bar:after,
+.canhbao .c100.p78 .fill,
+.canhbao .c100.p79 .bar:after,
+.canhbao .c100.p79 .fill,
+.canhbao .c100.p80 .bar:after,
+.canhbao .c100.p80 .fill,
+.canhbao .c100.p81 .bar:after,
+.canhbao .c100.p81 .fill,
+.canhbao .c100.p82 .bar:after,
+.canhbao .c100.p82 .fill,
+.canhbao .c100.p83 .bar:after,
+.canhbao .c100.p83 .fill,
+.canhbao .c100.p84 .bar:after,
+.canhbao .c100.p84 .fill,
+.canhbao .c100.p85 .bar:after,
+.canhbao .c100.p85 .fill,
+.canhbao .c100.p86 .bar:after,
+.canhbao .c100.p86 .fill,
+.canhbao .c100.p87 .bar:after,
+.canhbao .c100.p87 .fill,
+.canhbao .c100.p88 .bar:after,
+.canhbao .c100.p88 .fill,
+.canhbao .c100.p89 .bar:after,
+.canhbao .c100.p89 .fill,
+.canhbao .c100.p90 .bar:after,
+.canhbao .c100.p90 .fill,
+.canhbao .c100.p91 .bar:after,
+.canhbao .c100.p91 .fill,
+.canhbao .c100.p92 .bar:after,
+.canhbao .c100.p92 .fill,
+.canhbao .c100.p93 .bar:after,
+.canhbao .c100.p93 .fill,
+.canhbao .c100.p94 .bar:after,
+.canhbao .c100.p94 .fill,
+.canhbao .c100.p95 .bar:after,
+.canhbao .c100.p95 .fill,
+.canhbao .c100.p96 .bar:after,
+.canhbao .c100.p96 .fill,
+.canhbao .c100.p97 .bar:after,
+.canhbao .c100.p97 .fill,
+.canhbao .c100.p98 .bar:after,
+.canhbao .c100.p98 .fill,
+.canhbao .c100.p99 .bar:after,
+.canhbao .c100.p99 .fill,
+.canhbao .pie-fill {
     transform: rotate(180deg)
 }
 
@@ -1719,7 +1976,9 @@ p a.banner img {
     background-color: #e6e6e6
 }
 
-.canhbao .c100 *,.canhbao .c100 :after,.canhbao .c100 :before {
+.canhbao .c100 *,
+.canhbao .c100 :after,
+.canhbao .c100 :before {
     box-sizing: content-box
 }
 
@@ -1778,7 +2037,7 @@ p a.banner img {
     position: absolute;
     width: 1em;
     height: 1em;
-    clip: rect(0,1em,1em,.5em)
+    clip: rect(0, 1em, 1em, .5em)
 }
 
 .canhbao .c100.p1 .bar {
@@ -2185,20 +2444,24 @@ p a.banner img {
     cursor: default
 }
 
-.canhbao .c100.blue .bar,.canhbao .c100.blue .fill {
-    border-color: #2755b7!important
+.canhbao .c100.blue .bar,
+.canhbao .c100.blue .fill {
+    border-color: #2755b7 !important
 }
 
-.canhbao .c100.green .bar,.canhbao .c100.green .fill {
-    border-color: #00c853!important
+.canhbao .c100.green .bar,
+.canhbao .c100.green .fill {
+    border-color: #00c853 !important
 }
 
-.canhbao .c100.orange .bar,.canhbao .c100.orange .fill {
-    border-color: var(--colorerror)!important
+.canhbao .c100.orange .bar,
+.canhbao .c100.orange .fill {
+    border-color: var(--colorerror) !important
 }
 
-.canhbao .c100.red .bar,.canhbao .c100.red .fill {
-    border-color: red!important
+.canhbao .c100.red .bar,
+.canhbao .c100.red .fill {
+    border-color: red !important
 }
 
 .userupdate {
@@ -2213,7 +2476,9 @@ p a.banner img {
     margin-right: 1rem
 }
 
-.updateinfo .btn,.updateinfo input,.updateinfo select {
+.updateinfo .btn,
+.updateinfo input,
+.updateinfo select {
     font-size: 14px
 }
 
@@ -2362,11 +2627,13 @@ p a img {
     content: none
 }
 
-.baodanhhangngay .progressbar li.active:after,.baodanhhangngay .progressbar li.complete:after {
+.baodanhhangngay .progressbar li.active:after,
+.baodanhhangngay .progressbar li.complete:after {
     background: #3aac5d
 }
 
-.baodanhhangngay .progressbar li.active:before,.baodanhhangngay .progressbar li.complete:before {
+.baodanhhangngay .progressbar li.active:before,
+.baodanhhangngay .progressbar li.complete:before {
     background: #3aac5d;
     border-color: #3aac5d;
     color: #fff
@@ -2597,7 +2864,7 @@ p a img {
     font-size: 12px;
     border-radius: 100px;
     font-weight: 400;
-    display: inline-block!important
+    display: inline-block !important
 }
 
 .nvcg .showlichsu .table .mission h6 span.ketthuc {
@@ -2631,7 +2898,7 @@ p a img {
 }
 
 .conlai .c100 span {
-    display: flex!important;
+    display: flex !important;
     align-items: inherit;
     top: 18px
 }
@@ -2680,7 +2947,7 @@ p a img {
     width: 100%;
     color: var(--whitecolor);
     padding: 1rem 1.5rem 2.5rem;
-    background: rgba(255,255,255,.1)
+    background: rgba(255, 255, 255, .1)
 }
 
 .fsbanner .fstime h6 {
@@ -2783,14 +3050,15 @@ p a img {
     left: -70%
 }
 
-.fstoken .nhiemvu-block:after,.fstoken .nhiemvu-block:before {
+.fstoken .nhiemvu-block:after,
+.fstoken .nhiemvu-block:before {
     content: "";
     position: absolute;
     width: 50vh;
     height: 50vh;
     border-radius: 100vh;
     z-index: 1;
-    background-color: rgba(255,255,255,.1)
+    background-color: rgba(255, 255, 255, .1)
 }
 
 .fstoken .nhiemvu-block:after {
@@ -2814,7 +3082,7 @@ p a img {
 }
 
 .fstoken .nhiemvu-block .pricetk {
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     padding: .5rem;
     font-weight: 400;
     border-top: 1px dotted var(--whitecolor)
@@ -2845,19 +3113,19 @@ p a img {
 }
 
 .fstoken .nv1 {
-    background-image: linear-gradient(180deg,#c872f2,#f772d1)
+    background-image: linear-gradient(180deg, #c872f2, #f772d1)
 }
 
 .fstoken .nv2 {
-    background-image: linear-gradient(180deg,#4760ff,#0dccff)
+    background-image: linear-gradient(180deg, #4760ff, #0dccff)
 }
 
 .fstoken .nv3 {
-    background-image: linear-gradient(180deg,#2fb383,#1ed386)
+    background-image: linear-gradient(180deg, #2fb383, #1ed386)
 }
 
 .fstoken .nv4 {
-    background-image: linear-gradient(180deg,#b6325f,#ff887c)
+    background-image: linear-gradient(180deg, #b6325f, #ff887c)
 }
 
 .slider .container {
@@ -3061,7 +3329,7 @@ p a img {
 
 .maincontent .tab-content .accordion-button:not(.collapsed) {
     color: var(--color2);
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .maincontent .tab-content .accordion-collapse {
@@ -3070,7 +3338,7 @@ p a img {
 
 .maincontent .tab-content .accordion-collapse ul.btn-list {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     list-style: none;
     grid-gap: 1rem
 }
@@ -3158,8 +3426,8 @@ p a img {
 }
 
 .sktintuc .nav-out {
-    flex-direction: row!important;
-    align-items: center!important;
+    flex-direction: row !important;
+    align-items: center !important;
     border: 0
 }
 
@@ -3170,7 +3438,7 @@ p a img {
 
 .sktintuc .nav-out .nav li .nav-link.active {
     border-bottom: 3px solid var(--color1);
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     color: var(--color2);
     border-radius: 0
 }
@@ -3234,7 +3502,8 @@ p a img {
     border-right: 1px solid var(--color3)
 }
 
-.sktintuc .tab-content .itemgames:hover .luottai,.sktintuc .tab-content .itemgames:hover h6 {
+.sktintuc .tab-content .itemgames:hover .luottai,
+.sktintuc .tab-content .itemgames:hover h6 {
     color: var(--color1)
 }
 
@@ -3422,7 +3691,8 @@ p a img {
     margin-bottom: 0
 }
 
-.content .title-goinap,.content .titlegoi {
+.content .title-goinap,
+.content .titlegoi {
     padding: .6rem 1rem;
     font-weight: 700;
     color: var(--color2)
@@ -3439,7 +3709,7 @@ p a img {
 }
 
 .sidebottom .bg-color {
-    background: linear-gradient(0deg,rgba(19,19,19,.9),rgba(19,19,19,.9)),linear-gradient(0deg,rgba(0,0,0,0) 34.13%,rgba(3,64,255,.9) 267.46%);
+    background: linear-gradient(0deg, rgba(19, 19, 19, .9), rgba(19, 19, 19, .9)), linear-gradient(0deg, rgba(0, 0, 0, 0) 34.13%, rgba(3, 64, 255, .9) 267.46%);
     border-radius: 20px 20px 0 0
 }
 
@@ -3447,7 +3717,7 @@ p a img {
     list-style: none;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     height: 62px;
     padding: 0;
     margin: 0
@@ -3472,12 +3742,12 @@ p a img {
 }
 
 .sidebottom ul li a.active {
-    background: radial-gradient(37.09% 78.81% at 50% 50.85%,rgba(0,101,255,.9) 0,rgba(0,61,153,0) 100%)
+    background: radial-gradient(37.09% 78.81% at 50% 50.85%, rgba(0, 101, 255, .9) 0, rgba(0, 61, 153, 0) 100%)
 }
 
 @media(max-width: 576px) {
     .sidebottom ul li a.active {
-        background:radial-gradient(49.41% 49.15% at 50% 50.85%,rgba(0,101,255,.9) 0,rgba(0,61,153,0) 100%)
+        background: radial-gradient(49.41% 49.15% at 50% 50.85%, rgba(0, 101, 255, .9) 0, rgba(0, 61, 153, 0) 100%)
     }
 }
 
@@ -3488,7 +3758,7 @@ p a img {
 
 @media(max-width: 576px) {
     .sidebottom ul li a span {
-        font-size:13px;
+        font-size: 13px;
         text-wrap: nowrap
     }
 }
@@ -3515,7 +3785,7 @@ footer .mainfooter p {
 }
 
 .nofixed {
-    position: relative!important
+    position: relative !important
 }
 
 .btn.xacnhan {
@@ -3546,13 +3816,13 @@ footer .mainfooter p {
 
 @media(max-width: 768px) {
     .content {
-        border:0
+        border: 0
     }
 }
 
 @media(max-width: 540px) {
     .maincontent .tab-content .accordion-collapse ul.btn-list {
-        grid-template-columns:repeat(2,1fr)
+        grid-template-columns: repeat(2, 1fr)
     }
 
     .sktintuc .tab-content .itemgames .item-img {
@@ -3563,7 +3833,7 @@ footer .mainfooter p {
 
 @media(max-width: 414px) {
     .baodanhhangngay .progressbar li {
-        font-size:12px
+        font-size: 12px
     }
 
     .sidebottom ul li a {
@@ -3572,7 +3842,7 @@ footer .mainfooter p {
     }
 
     .sidebottom ul li a i {
-        margin-right: 0!important;
+        margin-right: 0 !important;
         margin-bottom: 5px
     }
 
@@ -3594,7 +3864,7 @@ footer .mainfooter p {
     }
 
     .chucnang ul.chucnang-list {
-        grid-template-columns: repeat(3,1fr)
+        grid-template-columns: repeat(3, 1fr)
     }
 
     .userinfogame .container {
@@ -3650,7 +3920,7 @@ footer .mainfooter p {
 }
 
 .vplay-wrap .top-nav li.active a {
-    color: red!important
+    color: red !important
 }
 
 .vplay-wrap .user {
@@ -3687,7 +3957,7 @@ footer .mainfooter p {
     top: 100%;
     left: 50%;
     margin-left: -5px;
-    border: 5px solid rgba(0,0,0,0);
+    border: 5px solid rgba(0, 0, 0, 0);
     border-top-color: #000
 }
 
@@ -3738,7 +4008,7 @@ footer .mainfooter p {
 
 @media(min-width: 768px) {
     .vplay-wrap .canhbao {
-        padding:1.5rem
+        padding: 1.5rem
     }
 }
 
@@ -3790,7 +4060,7 @@ footer .mainfooter p {
 }
 
 .vplay-wrap .lichsu table td span.green {
-    color: var(--colorok)!important
+    color: var(--colorok) !important
 }
 
 .vplay-wrap .bao-mat nav {
@@ -3830,7 +4100,7 @@ footer .mainfooter p {
 
 @media(min-width: 768px) {
     .vplay-wrap .footer .bg-footer .mainfooter {
-        padding-left:20px;
+        padding-left: 20px;
         padding-right: 20px;
         text-align: left
     }
@@ -3838,7 +4108,7 @@ footer .mainfooter p {
 
 @media(min-width: 576px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer {
-        display:flex
+        display: flex
     }
 }
 
@@ -3849,21 +4119,21 @@ footer .mainfooter p {
 
 @media(min-width: 768px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.onlive {
-        margin-bottom:0;
-        margin-top: 0!important
+        margin-bottom: 0;
+        margin-top: 0 !important
     }
 }
 
 @media(min-width: 576px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.onlive {
-        margin-bottom:0;
-        margin-top: 0!important
+        margin-bottom: 0;
+        margin-top: 0 !important
     }
 
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.vplay {
         margin-bottom: 0;
-        margin-left: 0!important;
-        margin-top: 0!important
+        margin-left: 0 !important;
+        margin-top: 0 !important
     }
 }
 
@@ -3904,7 +4174,7 @@ footer .mainfooter p {
 }
 
 .form-control:focus {
-    box-shadow: none!important
+    box-shadow: none !important
 }
 
 span.view_password {
@@ -3926,12 +4196,13 @@ span.view_password {
     font-size: 3rem;
     font-family: sans-serif;
     flex-direction: column;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
     width: 100%;
     height: 100%
 }
 
-.loading-page,.loading-page .img-loading {
+.loading-page,
+.loading-page .img-loading {
     display: flex;
     align-items: center;
     justify-content: center
@@ -3952,7 +4223,7 @@ span.view_password {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 8px solid rgba(255,255,255,.5);
+    border: 8px solid rgba(255, 255, 255, .5);
     border-top-color: #d91f26;
     animation: spin 1s ease-in-out infinite
 }
@@ -3964,14 +4235,14 @@ span.view_password {
 }
 
 .text_italic {
-    font-style: italic!important;
+    font-style: italic !important;
     color: #8d8d8d
 }
 
 .app_alert {
-    opacity: 1!important;
+    opacity: 1 !important;
     display: block;
-    background: rgba(0,0,0,.5)
+    background: rgba(0, 0, 0, .5)
 }
 
 .app_alert button.close {
@@ -3984,8 +4255,8 @@ span.view_password {
 }
 
 .app_alert .modal-dialog {
-    transform: translateY(-50%)!important;
-    top: 50%!important;
+    transform: translateY(-50%) !important;
+    top: 50% !important;
     display: flex;
     justify-content: center;
     align-items: center
@@ -4008,9 +4279,9 @@ span.view_password {
 }
 
 .app_popup {
-    opacity: 1!important;
+    opacity: 1 !important;
     display: block;
-    background: rgba(0,0,0,.5)
+    background: rgba(0, 0, 0, .5)
 }
 
 .app_popup button.close {
@@ -4021,7 +4292,7 @@ span.view_password {
     width: 30px;
     height: 30px;
     border: none;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1.3rem;
     transition: 1s
 }
@@ -4076,7 +4347,7 @@ span.view_password {
     background-color: var(--whitecolor);
     border-radius: 4px;
     border: 2px solid var(--color1);
-    box-shadow: 0 0 0 4px rgba(255,155,67,.32);
+    box-shadow: 0 0 0 4px rgba(255, 155, 67, .32);
     align-items: center;
     justify-content: start
 }
@@ -4084,11 +4355,11 @@ span.view_password {
 .hotro_wrap .hotro .hotro-tele i {
     font-size: 65px;
     background: #ffbd56;
-    background: linear-gradient(133deg,rgb(255,189,86),rgb(255,136,56));
+    background: linear-gradient(133deg, rgb(255, 189, 86), rgb(255, 136, 56));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
     transition: all .3s ease-in-out
 }
 
@@ -4131,7 +4402,7 @@ span.view_password {
 }
 
 .hotro_wrap .hotro li.list-group-item>span {
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     border: none;
     padding: 10px;
     display: block;
@@ -4161,14 +4432,14 @@ span.view_password {
     justify-content: center;
     align-items: center;
     width: 35%;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     padding: 5px 0;
     border-radius: 5px
 }
 
 @media(min-width: 768px) {
     .game_list .game_category .swiper-slide {
-        width:20%
+        width: 20%
     }
 }
 
@@ -4190,12 +4461,12 @@ span.view_password {
 
 @media(min-width: 768px) {
     .game_list .game_category .swiper-slide:nth-child(2n) {
-        width:20%
+        width: 20%
     }
 }
 
 .game_list .game_icon .card {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border: none;
     text-align: center;
     margin-bottom: calc(var(--spacing)/2)
@@ -4312,7 +4583,7 @@ span.view_password {
 
 @media(min-width: 768px) {
     .topup_payment .method_promo .promo_info {
-        font-size:1rem
+        font-size: 1rem
     }
 }
 
@@ -4376,7 +4647,7 @@ span.view_password {
 
 @media(min-width: 768px) {
     .app_popup .modal-body {
-        max-height:-moz-fit-content;
+        max-height: -moz-fit-content;
         max-height: fit-content
     }
 }
@@ -4437,7 +4708,8 @@ span.view_password {
     color: #5cb85c
 }
 
-#progressbar li.active:after,#progressbar li.active:before {
+#progressbar li.active:after,
+#progressbar li.active:before {
     background: #5cb85c;
     color: #fff
 }
@@ -4479,7 +4751,8 @@ span.view_password {
     width: 50%
 }
 
-#progressbar li:nth-child(2):after,#progressbar li:nth-child(3):after {
+#progressbar li:nth-child(2):after,
+#progressbar li:nth-child(3):after {
     left: 0
 }
 
@@ -4511,7 +4784,7 @@ span.view_password {
 
 @media(min-width: 768px) {
     .topup_bankpay .bank_info_right {
-        width:60%
+        width: 60%
     }
 }
 
@@ -4619,7 +4892,7 @@ span.view_password {
 
 @media(min-width: 768px) {
     .topup_bankpay .bank_content {
-        font-size:1rem
+        font-size: 1rem
     }
 }
 
@@ -4705,7 +4978,7 @@ span.tick {
 }
 
 .sms_detail .table tr td.vtv_orange {
-    color: #ff9833!important
+    color: #ff9833 !important
 }
 
 .sms_detail .text-small {
@@ -4724,7 +4997,7 @@ span.tick {
 
 @media(min-width: 768px) {
     .sms_action .sms_content {
-        font-size:1rem
+        font-size: 1rem
     }
 }
 
@@ -4787,7 +5060,8 @@ h4.title {
     margin-bottom: 0
 }
 
-.package_product .titlegoi,h4.title {
+.package_product .titlegoi,
+h4.title {
     padding: .6rem 1rem;
     font-weight: 700;
     color: var(--color2)
@@ -4800,7 +5074,7 @@ h4.title {
 }
 
 .package_product .card {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border: none;
     text-align: center;
     margin-bottom: calc(var(--spacing)/2)
@@ -4828,7 +5102,7 @@ h4.title {
 
 .nav-pills .nav-link {
     color: #2b388f;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
     text-transform: capitalize;
     font-weight: 500
 }
@@ -4851,15 +5125,15 @@ h4.title {
 }
 
 .lastest-giftcode .col-md-6 {
-    padding: 0!important
+    padding: 0 !important
 }
 
 .lastest-giftcode .item-lastest-giftcode:nth-child(2n) {
-    padding: 0 0 0 8px!important
+    padding: 0 0 0 8px !important
 }
 
 .lastest-giftcode .item-lastest-giftcode:nth-child(odd) {
-    padding: 0 8px 0 0!important
+    padding: 0 8px 0 0 !important
 }
 
 .lastest-giftcode .item-giftcode {
@@ -4943,8 +5217,9 @@ h4.title {
     color: #333
 }
 
-.selected-giftcode .item-giftcode p,.selected-giftcode .item-giftcode span {
-    margin: 4px!important;
+.selected-giftcode .item-giftcode p,
+.selected-giftcode .item-giftcode span {
+    margin: 4px !important;
     font-weight: 400;
     font-size: 12px;
     line-height: 16.8px;
@@ -4979,14 +5254,14 @@ h4.title {
 
 @media(max-width: 570px) {
     .selected-giftcode .item-giftcode .infor-giftcode {
-        padding:0 12px!important
+        padding: 0 12px !important
     }
 }
 
 .selected-giftcode .item-giftcode .infor-giftcode img {
     width: 16px;
     height: 16px;
-    border-radius: 0!important
+    border-radius: 0 !important
 }
 
 @keyframes showDeitai {
@@ -5066,7 +5341,7 @@ h4.title {
 }
 
 .giftcode-for-you .item-giftcode:hover .detail {
-    display: block!important
+    display: block !important
 }
 
 .transaction-history-giftcode {
@@ -5169,7 +5444,7 @@ h4.title {
 }
 
 .detail-giftcode .content .btn-giftcode {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
 }
 
 .detail-giftcode .content button {
@@ -5292,7 +5567,8 @@ h4.title {
     color: #2b7fff
 }
 
-.receive-giftcode .content input,.receive-giftcode .content select {
+.receive-giftcode .content input,
+.receive-giftcode .content select {
     width: 100%;
     padding: 8px 24px;
     border-radius: 4px;
@@ -5311,7 +5587,7 @@ h4.title {
 }
 
 .receive-giftcode .content .btn-giftcode {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
 }
 
 .receive-giftcode .content button {
@@ -5362,14 +5638,14 @@ h4.title {
 }
 
 .app-popup-alert {
-    opacity: 1!important;
+    opacity: 1 !important;
     display: block;
-    background: rgba(0,0,0,.6)
+    background: rgba(0, 0, 0, .6)
 }
 
 .app-popup-alert .modal-content {
     border-radius: 8px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
     border: none
 }
@@ -5394,7 +5670,7 @@ h4.title {
 
 .app-popup-alert .modal-header button {
     border: none;
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .app-popup-alert .modal-body {
@@ -5516,7 +5792,7 @@ h4.title {
 }
 
 .redeem-giftcode .human-authentication {
-    background-color: rgba(0,0,0,0)
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .redeem-giftcode .human-authentication span {
@@ -5602,7 +5878,7 @@ h4.title {
 }
 
 .history-giftcode .container .content .search .search-input-div {
-    position: relative!important
+    position: relative !important
 }
 
 .history-giftcode .container .content .search p {
@@ -5632,11 +5908,11 @@ h4.title {
 }
 
 .history-giftcode .container .content input[type=text]::-webkit-calendar-picker-popup {
-    background-color: #3a3a3b!important
+    background-color: #3a3a3b !important
 }
 
 .history-giftcode .container .content input[type=text]:focus {
-    border-radius: 4px 4px 0 0!important
+    border-radius: 4px 4px 0 0 !important
 }
 
 .history-giftcode .container .content p {
@@ -5665,13 +5941,13 @@ h4.title {
 
 @media(max-width: 540px) {
     .history-giftcode .container .content .result-search .text-center.scroll {
-        overflow-x:scroll
+        overflow-x: scroll
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
     .history-giftcode .container .content .result-search .text-center.scroll {
-        overflow-x:scroll
+        overflow-x: scroll
     }
 }
 
@@ -5741,24 +6017,24 @@ h4.title {
 }
 
 .history-giftcode .react-datepicker {
-    border: none!important
+    border: none !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__day {
-    color: #f3f3f3!important
+    color: #f3f3f3 !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__day:hover {
     color: currentColor;
-    background-color: #0065ff!important
+    background-color: #0065ff !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__day--outside-month {
-    color: #7b8186!important
+    color: #7b8186 !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__day--selected {
-    background-color: #0065ff!important
+    background-color: #0065ff !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__current-month {
@@ -5774,51 +6050,52 @@ h4.title {
     font-weight: 600;
     line-height: 16.1px;
     letter-spacing: -.02em;
-    color: #dedede!important
+    color: #dedede !important
 }
 
 .history-giftcode .react-datepicker .react-datepicker__month {
     margin: 0;
     padding: 0;
-    background-color: #3a3a3b!important
+    background-color: #3a3a3b !important
 }
 
 @media(min-width: 769px) {
     .history-giftcode .react-datepicker .react-datepicker__day {
-        margin:8px 10px!important
+        margin: 8px 10px !important
     }
 }
 
 .history-giftcode .react-datepicker-popper {
     padding: 0 12px;
-    top: 100%!important;
-    transform: translate(0)!important;
-    width: 100%!important
+    top: 100% !important;
+    transform: translate(0) !important;
+    width: 100% !important
 }
 
 .history-giftcode .react-datepicker__triangle {
-    display: none!important
+    display: none !important
 }
 
 .history-giftcode .react-datepicker__month-container {
-    border: none!important;
-    width: 100%!important
+    border: none !important;
+    width: 100% !important
 }
 
 .history-giftcode .react-datepicker__header {
-    border: none!important;
-    border-radius: 0!important;
-    background-color: #3a3a3b!important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #3a3a3b !important;
     width: 100%
 }
 
-.history-giftcode .react-datepicker,.history-giftcode .react-datepicker-ignore-onclickoutside input {
+.history-giftcode .react-datepicker,
+.history-giftcode .react-datepicker-ignore-onclickoutside input {
     width: 100%
 }
 
 @media(min-width: 769px) {
     .history-giftcode .react-datepicker__day-name {
-        margin:0 10px 8px!important
+        margin: 0 10px 8px !important
     }
 }
 
@@ -5829,8 +6106,8 @@ h4.title {
     line-height: 16.1px;
     letter-spacing: -.02em;
     text-align: center;
-    color: #0f1251!important;
-    background-color: #fff!important
+    color: #0f1251 !important;
+    background-color: #fff !important
 }
 
 .home_menu {
@@ -5846,7 +6123,7 @@ h4.title {
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 4px 9px 0 rgba(181,181,181,.25)
+    box-shadow: 0 4px 9px 0 rgba(181, 181, 181, .25)
 }
 
 .home_menu .item {
@@ -5883,7 +6160,7 @@ h4.title {
 
 @media(min-width: 500px) {
     .home_menu .item svg {
-        margin-right:5px;
+        margin-right: 5px;
         height: 36px;
         width: auto
     }
@@ -5896,7 +6173,7 @@ h4.title {
 
 @media(min-width: 700px) {
     .home_menu .item {
-        display:flex;
+        display: flex;
         font-size: 20px;
         line-height: 27px;
         padding-top: 0
@@ -5969,7 +6246,7 @@ h4.title {
 
 @media(min-width: 500px) {
     .product_list .item {
-        width:25%
+        width: 25%
     }
 
     .product_list .item .img {
@@ -5979,7 +6256,7 @@ h4.title {
 
 @media(min-width: 700px) {
     .product_list .item {
-        width:20%
+        width: 20%
     }
 }
 
@@ -6061,7 +6338,7 @@ h4.title {
 
 @media(min-width: 500px) {
     .giftcode_list .item .img {
-        border-radius:30px
+        border-radius: 30px
     }
 }
 
@@ -6119,7 +6396,7 @@ h4.title {
 
 @media(min-width: 0px)and (max-width:375px) {
     .lucky_whell_btn {
-        bottom:80px;
+        bottom: 80px;
         right: 1px;
         width: 200px
     }
@@ -6127,7 +6404,7 @@ h4.title {
 
 @media(min-width: 376px)and (max-width:541px) {
     .lucky_whell_btn {
-        bottom:80px;
+        bottom: 80px;
         right: 1px;
         width: 245px
     }
@@ -6135,7 +6412,7 @@ h4.title {
 
 @media(min-width: 541px)and (max-width:769px) {
     .lucky_whell_btn {
-        bottom:80px;
+        bottom: 80px;
         right: 1px;
         width: 285px
     }
@@ -6146,7 +6423,9 @@ h4.title {
 }
 
 @keyframes pulse {
-    0%,to {
+
+    0%,
+    to {
         transform: scale(1)
     }
 
@@ -6197,9 +6476,9 @@ h4.title {
 }
 
 .btn-common {
-    background-color: #0065ff!important;
-    border-color: #0065ff!important;
-    color: #fff!important
+    background-color: #0065ff !important;
+    border-color: #0065ff !important;
+    color: #fff !important
 }
 
 .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
@@ -6228,7 +6507,7 @@ h4.title {
 }
 
 .breadcrumb-item+.breadcrumb-item:before {
-    content: var(--bs-breadcrumb-divider,">");
+    content: var(--bs-breadcrumb-divider, ">");
     padding: 0 .5rem;
     color: #6c757d
 }
@@ -6245,7 +6524,7 @@ h4.title {
     height: 100vh;
     position: fixed;
     top: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     z-index: 1060;
     left: 0
 }
@@ -6295,14 +6574,14 @@ h4.title {
 
 @media(max-width: 540px) {
     .postion-right {
-        right:-80px;
+        right: -80px;
         bottom: -30px
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
     .postion-right {
-        right:-80px;
+        right: -80px;
         bottom: -30px
     }
 }
@@ -6314,12 +6593,12 @@ h4.title {
 
 @media(max-width: 540px) {
     .postion-right img {
-        scale:.41
+        scale: .41
     }
 }
 
 @media(min-width: 541px)and (max-width:768px) {
     .postion-right img {
-        scale:.41
+        scale: .41
     }
 }

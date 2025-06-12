@@ -170,12 +170,7 @@
         a.jsx)(o.Fragment, {}) : (0,
         a.jsx)(d(), {
             href: "https://yeuho.vplay.vn/dEqz/trangnoibo",
-            className: "lucky_whell_btn",
-            children: (0,
-            a.jsx)("img", {
-                src: "/images/yeuho9d/logo.png",
-                alt: "Lucky Whell"
-            })
+            className: "lucky_whell_btn"
         })
           , g = (0,
         o.createContext)({})
