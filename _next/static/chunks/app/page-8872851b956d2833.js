@@ -135,28 +135,32 @@
                 name: "Linh Tiêu Giới",
                 logoImage: "./images/ltg/ltg-logo.jpg",
                 type: 3,
-                gameType: { name: "game hot" }
+                gameType: { name: "game hot" },
+                href: "https://linhgioi4d.com/"
             },
             {
                 id: 2,
                 name: "Bá Ngự Càn Khôn",
                 logoImage: "./images/bnck/bnck-logo.jpg",
                 type: 2,
-                gameType: { name: "MMORPG" }
+                gameType: { name: "MMORPG" },
+                href: "https://bangucankhon.cloud/"
             },
             {
                 id: 3,
                 name: "Nữ Thần Mộng Mơ",
                 logoImage: "./images/ntmm/ntmm-logo.jpg",
                 type: 3,
-                gameType: { name: "game hot" }
+                gameType: { name: "game hot" },
+                href: "http://www.poopogame.com/url/3wxS7zKT"
             },
             {
                 id: 4,
                 name: "Thiên Lộ Truyền Kỳ",
                 logoImage: "./images/tltk/tltk-logo.jpg",
                 type: 3,
-                gameType: { name: "game hot" }
+                gameType: { name: "game hot" },
+                href: "https://nghichthiencaimenh.cloud/"
             }
         ];
 
@@ -166,16 +170,18 @@
                 title: "Bá Ngự Càn Khôn - Khai mở server lúc 13h thứ 2 hàng tuần",
                 image: "./images/bnck/bnck-banner.png",
                 tag: [
-                    { id: "tag1", name: "Cập nhật" }
-                ]
+                    { id: "tag1", name: "Cập nhật" , href: ""}
+                ],
+                href: "https://bangucankhon.cloud/"
             },
             {
                 id: 2,
                 title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3,6 hàng tuần",
                 image: "./images/ltg/ltg-banner.jpg",
                 tag: [
-                    { id: "tag2", name: "Cập nhật" }
-                ]
+                    { id: "tag2", name: "Cập nhật" },
+                ],
+                href: "https://linhgioi4d.com/"
             },
             {
                 id: 3,
@@ -183,7 +189,8 @@
                 image: "./images/ntmm/ntmm-banner.jpg",
                 tag: [
                     { id: "tag3", name: "Cập nhật" }
-                ]
+                ],
+                href: "http://www.poopogame.com/url/3wxS7zKT"
             },
             {
                 id: 4,
@@ -191,7 +198,8 @@
                 image: "./images/tltk/tltk-banner.png",
                 tag: [
                     { id: "tag4", name: "Cập nhật" }
-                ]
+                ],
+                href: "https://nghichthiencaimenh.cloud/"
             }
         ];
 
@@ -329,7 +337,7 @@
                                                             className: "product_list",
                                                             children: dataGame.map((e, s) => (0,
                                                                 i.jsxs)(j(), {
-                                                                    href: 3 === e.type ? "play/".concat(null == e ? void 0 : e.id, " ") : "/games/".concat(null == e ? void 0 : e.id),
+                                                                    href: e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`),
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     children: [(0,
                                                                         i.jsx)("div", {
@@ -380,7 +388,7 @@
                                                 children: [
                                                   (0, i.jsx)(h.A, {
                                                     title: "TIN TỨC",
-                                                    href: "/tin-tuc/tin-tuc-moi-nhat",
+                                                    href: "",
                                                     isHidden: !1
                                                   }),
                                                   (0, i.jsx)("div", {
@@ -389,7 +397,7 @@
                                                       (0, i.jsx)("div", {
                                                         className: "col-sm-6 mb-3",
                                                         style: { cursor: "pointer" },
-                                                        onClick: () => F("/news/" + news.id),
+                                                        onClick: () => F(news.href),
                                                         children: (0, i.jsxs)("div", {
                                                           className: "news-item overflow-hidden",
                                                           children: [
