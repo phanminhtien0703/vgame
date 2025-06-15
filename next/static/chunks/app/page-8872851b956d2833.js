@@ -195,7 +195,7 @@
             {
                 id: 4,
                 title: "Thiên Lộ Truyền Kỳ - Khai mở server lúc 13h thứ 7 hàng tuần",
-                image: "./images/tltk/tltk-banner.png",
+                image: "./images/tltk/tltk-banner.jpg",
                 tag: [
                     { id: "tag4", name: "Cập nhật" }
                 ],
