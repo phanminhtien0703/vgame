@@ -160,7 +160,7 @@
     }
     )(),
     r.tu = e => r.tt().createScriptURL(e),
-    r.p = "./_next/",
+    r.p = "/_next/",
     ( () => {
         var e = {
             68: 0,
