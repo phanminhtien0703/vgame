@@ -42,7 +42,7 @@
         const data = {
             data: [
                 { image: './images/ntmm/ntmm-banner.jpg', link: 'http://www.poopogame.com/url/3wxS7zKT' },
-                { image: '/images/tltk/tltk-banner.png', link: 'https://nghichthiencaimenh.cloud/' },
+                { image: '/images/tltk/tltk-banner.jpg', link: 'https://nghichthiencaimenh.cloud/' },
                 { image: './images/bnck/bnck-banner.png', link: 'https://bangucankhon.cloud/' },
                 { image: './images/ltg/ltg-banner.jpg', link: 'https://linhgioi4d.com/' }
             ],
