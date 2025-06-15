@@ -162,7 +162,7 @@
           , g = {
             deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
             imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-            path: "/_next/image",
+            path: "./next/image",
             loader: "default",
             dangerouslyAllowSVG: !1,
             unoptimized: !1
@@ -619,7 +619,7 @@
             var t;
             let {config: r, src: n, width: i, quality: o} = e
               , a = o || (null == (t = r.qualities) ? void 0 : t.reduce( (e, t) => Math.abs(t - 75) < Math.abs(e - 75) ? t : e)) || 75;
-            return r.path + "?url=" + encodeURIComponent(n) + "&w=" + i + "&q=" + a + (n.startsWith("/_next/static/media/"),
+            return r.path + "?url=" + encodeURIComponent(n) + "&w=" + i + "&q=" + a + (n.startsWith("./next/static/media/"),
             "")
         }
         Object.defineProperty(t, "__esModule", {
@@ -685,7 +685,7 @@
                 imgConf: {
                     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
                     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                    path: "/_next/image",
+                    path: "./next/image",
                     loader: "default",
                     dangerouslyAllowSVG: !1,
                     unoptimized: !1
@@ -802,7 +802,7 @@
           , n = {
             deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
             imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-            path: "/_next/image",
+            path: "./next/image",
             loader: "default",
             loaderFile: "",
             domains: [],
