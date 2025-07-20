@@ -318,12 +318,12 @@
                                     children: [(0,
                                     t.jsxs)("label", {
                                         onClick: () => {
-                                            f(("https://www.facebook.com/messages/t/621586641048902")())
+                                            f(("https://www.facebook.com/GameMobileMmorpg2025")())
                                         }
                                         ,
                                         role: "button",
                                         children: [" ", (0,
-                                        t.jsx)("https://www.facebook.com/messages/t/621586641048902", {}), " Nạp OnG"]
+                                        t.jsx)("https://www.facebook.com/GameMobileMmorpg2025", {}), " Nạp OnG"]
                                     }), (0,
                                     t.jsx)("i", {
                                         className: "fa fa-chevron-".concat(h ? "up" : "down"),
@@ -365,7 +365,7 @@
                                     t.jsxs)("label", {
                                         role: "button",
                                         children: [(0,
-                                        t.jsx)("https://www.facebook.com/messages/t/621586641048902", {}), " Hỗ trợ"]
+                                        t.jsx)("https://www.facebook.com/GameMobileMmorpg2025", {}), " Hỗ trợ"]
                                     })
                                 })
                             }), (0,
@@ -839,7 +839,8 @@
                             })
                         })
                     }), (0,
-                    t.jsx)("div", {
+                    t.jsx)
+                    ("div", {
                         className: "sidebottom fixed-bottom",
                         children: (0,
                         t.jsx)("div", {
@@ -873,7 +874,8 @@
                                 )
                             })
                         })
-                    })]
+                    })
+                ]
                 })
             })
         }

@@ -41,10 +41,8 @@
             , c = a.n(n);
         const data = {
             data: [
-                { image: './images/ntmm/ntmm-banner.jpg', link: 'http://www.poopogame.com/url/3wxS7zKT' },
-                { image: '/images/tltk/tltk-banner.jpg', link: 'https://nghichthiencaimenh.cloud/' },
-                { image: './images/bnck/bnck-banner.png', link: 'https://bangucankhon.cloud/' },
-                { image: './images/ltg/ltg-banner.jpg', link: 'https://linhgioi4d.com/' }
+                { image: '/images/tmgt/tmgt-banner.png', link: 'https://nghichthiencaimenh.com/' },
+                { image: './images/ltg/ltg-banner.jpg', link: 'https://linhtieugioi.com/' }
             ],
             note: false // Hoặc true nếu muốn style khác cho pagination
         };
@@ -136,70 +134,45 @@
                 logoImage: "./images/ltg/ltg-logo.jpg",
                 type: 3,
                 gameType: { name: "game hot" },
-                href: "https://linhgioi4d.com/"
+                href: "https://linhtieugioi.com/"
             },
             {
                 id: 2,
-                name: "Bá Ngự Càn Khôn",
-                logoImage: "./images/bnck/bnck-logo.jpg",
-                type: 2,
-                gameType: { name: "MMORPG" },
-                href: "https://bangucankhon.cloud/"
-            },
-            {
-                id: 3,
-                name: "Nữ Thần Mộng Mơ",
-                logoImage: "./images/ntmm/ntmm-logo.jpg",
+                name: "Thần Ma Giáng Thế",
+                logoImage: "./images/tmgt/tmgt-logo.png",
                 type: 3,
-                gameType: { name: "game hot" },
-                href: "http://www.poopogame.com/url/3wxS7zKT"
-            },
-            {
-                id: 4,
-                name: "Thiên Lộ Truyền Kỳ",
-                logoImage: "./images/tltk/tltk-logo.jpg",
-                type: 3,
-                gameType: { name: "game hot" },
-                href: "https://nghichthiencaimenh.cloud/"
+                gameType: { name: "game mới" },
+                href: "https://nghichthiencaimenh.com/"
             }
         ];
 
         const dataNews = [
             {
                 id: 1,
-                title: "Bá Ngự Càn Khôn - Khai mở server lúc 13h thứ 2 hàng tuần",
-                image: "./images/bnck/bnck-banner.png",
-                tag: [
-                    { id: "tag1", name: "Cập nhật" , href: ""}
-                ],
-                href: "https://bangucankhon.cloud/"
-            },
-            {
-                id: 2,
                 title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3,6 hàng tuần",
                 image: "./images/ltg/ltg-banner.jpg",
                 tag: [
-                    { id: "tag2", name: "Cập nhật" },
+                    { id: "tag1", name: "Cập nhật" },
                 ],
-                href: "https://linhgioi4d.com/"
+                href: "https://linhtieugioi.com/"
+            },
+            {
+                id: 2,
+                title: "Thần Ma Giáng Thế - Khai mở server 1 lúc 10h ngày 21-07-2025",
+                image: "./images/tmgt/tmgt-banner.png",
+                tag: [
+                    { id: "tag2", name: "Cập nhật" }
+                ],
+                href: "https://nghichthiencaimenh.com/"
             },
             {
                 id: 3,
-                title: "Nữ Thần Mộng Mơ - Khai mở server lúc 13h thứ 4 hàng tuần",
-                image: "./images/ntmm/ntmm-banner.jpg",
+                title: "Thần Ma Giáng Thế - Khai mở server 2 lúc 15h ngày 21-07-2025",
+                image: "./images/tmgt/tmgt-banner.png",
                 tag: [
                     { id: "tag3", name: "Cập nhật" }
                 ],
-                href: "http://www.poopogame.com/url/3wxS7zKT"
-            },
-            {
-                id: 4,
-                title: "Thiên Lộ Truyền Kỳ - Khai mở server lúc 13h thứ 7 hàng tuần",
-                image: "./images/tltk/tltk-banner.jpg",
-                tag: [
-                    { id: "tag4", name: "Cập nhật" }
-                ],
-                href: "https://nghichthiencaimenh.cloud/"
+                href: "https://nghichthiencaimenh.com/"
             }
         ];
 
@@ -207,7 +180,7 @@
             {
                 id: 1,
                 name: "Hỗ trợ",
-                link: "https://www.facebook.com/messages/t/621586641048902"
+                link: "https://www.facebook.com/GameMobileMmorpg2025"
             },
         ]
 
