@@ -149,7 +149,7 @@
         const dataNews = [
             {
                 id: 1,
-                title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3,6 hàng tuần",
+                title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 2, 4, 6 hàng tuần",
                 image: "./images/ltg/ltg-banner.jpg",
                 tag: [
                     { id: "tag1", name: "Cập nhật" },
@@ -158,19 +158,10 @@
             },
             {
                 id: 2,
-                title: "Thần Ma Giáng Thế - Khai mở server 1 lúc 10h ngày 21-07-2025",
+                title: "Thần Ma Giáng Thế - Khai mở server lúc 13h thứ 3, 5, 7 hàng tuần",
                 image: "./images/tmgt/tmgt-banner.png",
                 tag: [
                     { id: "tag2", name: "Cập nhật" }
-                ],
-                href: "https://nghichthiencaimenh.com/"
-            },
-            {
-                id: 3,
-                title: "Thần Ma Giáng Thế - Khai mở server 2 lúc 15h ngày 21-07-2025",
-                image: "./images/tmgt/tmgt-banner.png",
-                tag: [
-                    { id: "tag3", name: "Cập nhật" }
                 ],
                 href: "https://nghichthiencaimenh.com/"
             }
