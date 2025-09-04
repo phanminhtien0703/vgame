@@ -147,17 +147,17 @@
                     name: "Đế Vương Đại Lục",
                     logoImage: "./images/dvdl/dvdl-logo.jpg",
                     type: 3,
-                    gameType: { name: "sắp ra mắt" },
+                    gameType: { name: "game mới" },
                     href: "http://www.poopogame.com/url/2fpGgV4J"
                 }
             ];
 
             const dataNews = [{
                     id: 1,
-                    title: "Linh Tiêu Giới - Khai mở server lúc 13h Thứ 2 & 5 hàng tuần",
+                    title: "Linh Tiêu Giới - Khai mở server lúc 13h Thứ 2 hàng tuần",
                     image: "./images/ltg/ltg-banner.jpg",
                     tag: [
-                        { id: "tag1", name: "Cập nhật" },
+                        { id: "tag1", name: "04-09-2025" },
                     ],
                     href: "https://linhtieugioi.com/"
                 },
@@ -166,16 +166,16 @@
                     title: "Thần Ma Giáng Thế - Khai mở server lúc 13h Thứ 4 & 7 hàng tuần",
                     image: "./images/tmgt/tmgt-banner.png",
                     tag: [
-                        { id: "tag2", name: "Cập nhật" }
+                        { id: "tag2", name: "04-09-2025" }
                     ],
                     href: "https://nghichthiencaimenh.com/"
                 },
                 {
                     id: 3,
-                    title: "Đế Vương Đại Lục - Dự kiến Ra mắt vào Thứ ba ngày 26-08-2025",
+                    title: "Đế Vương Đại Lục - Khai mở server lúc 13h Thứ 3 & 6 hàng tuần",
                     image: "./images/dvdl/dvdl-banner.jpg",
                     tag: [
-                        { id: "tag3", name: "22-08-2025" }
+                        { id: "tag3", name: "04-09-2025" }
                     ],
                     href: "http://www.poopogame.com/url/2fpGgV4J"
                 }
