@@ -318,12 +318,12 @@
                                     children: [(0,
                                     t.jsxs)("label", {
                                         onClick: () => {
-                                            f(("https://www.facebook.com/GameMobileMmorpg2025")())
+                                            f(("https://www.facebook.com/gamemobilestudio")())
                                         }
                                         ,
                                         role: "button",
                                         children: [" ", (0,
-                                        t.jsx)("https://www.facebook.com/GameMobileMmorpg2025", {}), " Nạp OnG"]
+                                        t.jsx)("https://www.facebook.com/gamemobilestudio", {}), " Nạp OnG"]
                                     }), (0,
                                     t.jsx)("i", {
                                         className: "fa fa-chevron-".concat(h ? "up" : "down"),
@@ -365,7 +365,7 @@
                                     t.jsxs)("label", {
                                         role: "button",
                                         children: [(0,
-                                        t.jsx)("https://www.facebook.com/GameMobileMmorpg2025", {}), " Hỗ trợ"]
+                                        t.jsx)("https://www.facebook.com/gamemobilestudio", {}), " Hỗ trợ"]
                                     })
                                 })
                             }), (0,

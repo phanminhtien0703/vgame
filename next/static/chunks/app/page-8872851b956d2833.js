@@ -184,7 +184,7 @@
             const dataMenu = [{
                 id: 1,
                 name: "Hỗ trợ",
-                link: "https://www.facebook.com/GameMobileMmorpg2025"
+                link: "https://www.facebook.com/gamemobilestudio"
             }, ]
 
             let N = () => {

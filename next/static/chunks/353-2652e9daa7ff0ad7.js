@@ -114,7 +114,7 @@
             , a = i(53180)
             , l = i(40364);
         let s = [{
-            target: "https://www.facebook.com/GameMobileMmorpg2025",
+            target: "https://www.facebook.com/gamemobilestudio",
             name: "Nạp OnG",
             icon: e => {
                 let { color: C } = e;
@@ -196,13 +196,13 @@
                     })
             }
             ,
-            path: ("https://www.facebook.com/GameMobileMmorpg2025")
+            path: ("https://www.facebook.com/gamemobilestudio")
         }, {
             target: "_blank",
             name: "Giftcode",
             giftCode: !0,
             icon: a.mY,
-            path: ("https://www.facebook.com/GameMobileMmorpg2025")
+            path: ("https://www.facebook.com/gamemobilestudio")
         }, {
             target: "_self",
             name: "Trang chủ",
@@ -230,7 +230,7 @@
             target: "_self",
             name: "Hỗ trợ",
             icon: a.nP,
-            path: "https://www.facebook.com/GameMobileMmorpg2025"
+            path: "https://www.facebook.com/gamemobilestudio"
         }, {
             target: "_self",
             name: "T\xe0i khoản",
@@ -257,7 +257,7 @@
                     })
             }
             ,
-            path: ("https://www.facebook.com/GameMobileMmorpg2025")
+            path: ("https://www.facebook.com/gamemobilestudio")
         }]
             , n = [{
                 name: "Trải nghiệm game",
