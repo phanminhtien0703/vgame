@@ -41,8 +41,8 @@
                 c = a.n(n);
             const data = {
                 data: [
-                    { image: '/images/tmgt/tmgt-banner.png', link: 'https://nghichthiencaimenh.com/' },
-                    { image: './images/ltg/ltg-banner.jpg', link: 'https://linhtieugioi.com/' },
+                    { image: '/images/tmgt/tmgt-banner.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
+                    { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/2I3cOUjH' },
                     { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/KCRAcDTh' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
@@ -132,7 +132,7 @@
                     logoImage: "./images/ltg/ltg-logo.jpg",
                     type: 3,
                     gameType: { name: "game hot" },
-                    href: "https://linhtieugioi.com"
+                    href: "http://www.poopogame.com/url/2I3cOUjH"
                 },
                 {
                     id: 2,
@@ -140,7 +140,7 @@
                     logoImage: "./images/tmgt/tmgt-logo.png",
                     type: 3,
                     gameType: { name: "game mới" },
-                    href: "https://nghichthiencaimenh.com/"
+                    href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
                 },
                 {
                     id: 3,
@@ -159,7 +159,7 @@
                     tag: [
                         { id: "tag1", name: "04-09-2025" },
                     ],
-                    href: "https://linhtieugioi.com/"
+                    href: "http://www.poopogame.com/url/2I3cOUjH"
                 },
                 {
                     id: 2,
@@ -168,7 +168,7 @@
                     tag: [
                         { id: "tag2", name: "04-09-2025" }
                     ],
-                    href: "https://nghichthiencaimenh.com/"
+                    href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
                 },
                 {
                     id: 3,
