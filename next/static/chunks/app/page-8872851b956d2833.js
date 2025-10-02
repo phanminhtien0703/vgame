@@ -217,6 +217,21 @@
 
             ];
 
+            const dataWelfare = [
+                {
+                    id: 1,
+                    title: "Hỗ trợ nạp x4",
+                    image: "./images/welfare/ho-tro-nap-x4.png",
+                    href: "https://www.facebook.com/share/p/1F8qAYyrpa/"
+                },
+                {
+                    id: 2,
+                    title: "Người cũ quay về",
+                    image: "./images/welfare/nguoi-cu-quay-ve.png",
+                    href: "https://www.facebook.com/share/p/169XL1LJ39/"
+                }
+            ];
+
             const dataNews = [{
                 id: 1,
                 title: "Linh Tiêu Giới - Khai mở server lúc 13h Thứ 2 hàng tuần",
@@ -426,75 +441,101 @@
                                                                                         className: "right"
                                                                                     })]
                                                                 })]
-                                                }),
-                                            (0, i.jsxs)("div", {
-                                                className: "giftcode_list",
+                                                }), (0, i.jsxs)("div", {
+                                                className: "welfare",
                                                 children: [
-                                                    // Header
                                                     (0, i.jsxs)("div", {
                                                         className: "d-flex justify-content-between align-items-center mb-3 text-white",
                                                         children: [
                                                             (0, i.jsx)("h3", {
                                                                 className: "text-title",
-                                                                children: "GIFTCODE"
-                                                            }),
-                                                            // (0, i.jsxs)("a", {
-                                                            //     className: "d-flex align-items-center gap-2",
-                                                            //     href: "https://giftcode.onlive.vn",
-                                                            //     style: { color: "#6C727F" },
-                                                            //     children: [
-                                                            //         (0, i.jsx)("span", {
-                                                            //             className: "text-navigate",
-                                                            //             style: { cursor: "pointer" },
-                                                            //             children: "Xem tất cả"
-                                                            //         }),
-                                                            //         (0, i.jsx)("img", {
-                                                            //             alt: "",
-                                                            //             src: "/icons/arrow.svg"
-                                                            //         })
-                                                            //     ]
-                                                            // })
+                                                                children: "KHUYẾN MÃI"
+                                                            })
                                                         ]
                                                     }),
-
-                                                    // List Giftcode
                                                     (0, i.jsx)("div", {
-                                                        className: "row",
-                                                        children: dataGiftcode.map((e, s) =>
+                                                        className: "list-product-info",
+                                                        children: (0, i.jsx)(c.RC, { // RC = Swiper
+                                                            spaceBetween: 24,
+                                                            slidesPerView: "auto",
+                                                            freeMode: !0,
+                                                            keyboard: !0,
+                                                            noSwiping: !0,
+                                                            children: dataWelfare.map((e) =>
+                                                                (0, i.jsx)(c.qr, { // qr = SwiperSlide
+                                                                    children: (0, i.jsx)("a", {
+                                                                        className: "promo_item",
+                                                                        href: e.href,
+                                                                        target: "_blank",
+                                                                        children: (0, i.jsx)("img", {
+                                                                            src: e.image,
+                                                                            alt: e.title,
+                                                                            style: {
+                                                                                width: "505px",
+                                                                                height: "266px",
+                                                                                objectFit: "cover",
+                                                                                borderRadius: "8px"
+                                                                            }
+                                                                        })
+                                                                    })
+                                                                }, e.id)
+                                                            )
+                                                        })
+                                                    })
+                                                ]
+                                            }),
+                                                    (0, i.jsxs)("div", {
+                                                        className: "giftcode_list",
+                                                        children: [
+                                                            // Header
+                                                            (0, i.jsxs)("div", {
+                                                                className: "d-flex justify-content-between align-items-center mb-3 text-white",
+                                                                children: [
+                                                                    (0, i.jsx)("h3", {
+                                                                        className: "text-title",
+                                                                        children: "GIFTCODE"
+                                                                    }),
+                                                                ]
+                                                            }),
+
+                                                            // List Giftcode
                                                             (0, i.jsx)("div", {
-                                                                className: "col-12 col-sm-6",
-                                                                children: (0, i.jsxs)("div", {   // ⚡ đổi a -> div bọc ngoài
-                                                                    className: "item d-flex",
-                                                                    children: [
-                                                                        (0, i.jsx)("div", {
-                                                                            className: "img",
-                                                                            children: (0, i.jsx)("img", {
-                                                                                src: e.image || "https://via.placeholder.com/80x80",
-                                                                                alt: e.name || "giftcode image"
-                                                                            })
-                                                                        }),
-                                                                        (0, i.jsxs)("div", {
-                                                                            className: "detail",
+                                                                className: "row",
+                                                                children: dataGiftcode.map((e, s) =>
+                                                                    (0, i.jsx)("div", {
+                                                                        className: "col-12 col-sm-6",
+                                                                        children: (0, i.jsxs)("div", {   // ⚡ đổi a -> div bọc ngoài
+                                                                            className: "item d-flex",
                                                                             children: [
-                                                                                (0, i.jsx)("h2", { children: e.name }),
-                                                                                (0, i.jsx)("p", { children: `Giftcode: ${e.totalGiftcode || 0}` }),
-                                                                                (0, i.jsx)("p", { children: `Người nhận: ${e.totalReceived || 0}` }),
-                                                                                (0, i.jsx)("a", {
-                                                                                    className: "btn",
-                                                                                    href: `https://m.me/gamemobilestudio?text=${encodeURIComponent(e.text)}`,
-                                                                                    target: "_blank",
-                                                                                    rel: "noopener noreferrer",
-                                                                                    children: "Nhận code"
+                                                                                (0, i.jsx)("div", {
+                                                                                    className: "img",
+                                                                                    children: (0, i.jsx)("img", {
+                                                                                        src: e.image || "https://via.placeholder.com/80x80",
+                                                                                        alt: e.name || "giftcode image"
+                                                                                    })
+                                                                                }),
+                                                                                (0, i.jsxs)("div", {
+                                                                                    className: "detail",
+                                                                                    children: [
+                                                                                        (0, i.jsx)("h2", { children: e.name }),
+                                                                                        (0, i.jsx)("p", { children: `Giftcode: ${e.totalGiftcode || 0}` }),
+                                                                                        (0, i.jsx)("p", { children: `Người nhận: ${e.totalReceived || 0}` }),
+                                                                                        (0, i.jsx)("a", {
+                                                                                            className: "btn",
+                                                                                            href: `https://m.me/gamemobilestudio?text=${encodeURIComponent(e.text)}`,
+                                                                                            target: "_blank",
+                                                                                            rel: "noopener noreferrer",
+                                                                                            children: "Nhận code"
+                                                                                        })
+                                                                                    ]
                                                                                 })
                                                                             ]
                                                                         })
-                                                                    ]
-                                                                })
-                                                            }, s)
-                                                        )
+                                                                    }, s)
+                                                                )
+                                                            })
+                                                        ]
                                                     })
-                                                ]
-                                            })
                                                 , (0, i.jsxs)("div", {
                                                     className: "news-in-home",
                                                     children: [
