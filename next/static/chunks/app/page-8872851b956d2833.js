@@ -165,6 +165,14 @@
                 type: 3,
                 gameType: { name: "game mới" },
                 href: "https://app.adjust.com/1sokpzx5"
+            },
+            {
+                id: 6,
+                name: "Thần Cơ Ấn",
+                logoImage: "./images/tcq4d/tcq4d-logo.jpg",
+                type: 3,
+                gameType: { name: "Game mới" },
+                href: ""
             }
             ];
 
@@ -213,6 +221,16 @@
                     totalReceived: 124,
                     type: 5,
                     text: "Nhận code game Ethereal Slayer",
+                },
+                {
+                    id: 6,
+                    name: "Thần Cơ Ấn",
+                    image: "./images/tcq4d/tcq4d-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 54,
+                    type: 6,
+                    text: "Nhận code game Thần Cơ Ấn",
+                    value: "Nhận code",
                 }
 
             ];
@@ -276,6 +294,15 @@
                     { id: "tag5", name: "15-09-2025" }
                 ],
                 href: "https://app.adjust.com/1sokpzx5"
+            },
+            {
+                id: 6,
+                title: "Thần Cơ Ấn - Khai mở server lúc 00:10' Thứ 3 & 7 hàng tuần",
+                image: "./images/tcq4d/tcq4d-banner.jpg",
+                tag: [
+                    { id: "tag6", name: "06-10-2025" }
+                ],
+                href: "#"
             }
             ];
 
@@ -311,7 +338,7 @@
                                                             if (e && e.listImageItem.length > 0) {
                                                                 if (t.A.get("popupHomeHistory"))
                                                                     return void O([]);
-                                                                O(e.listImageItem),
+                                                                //O(e.listImageItem),
                                                                     (0,
                                                                         g.QH)("popupHomeHistory", "show")
                                                             }
