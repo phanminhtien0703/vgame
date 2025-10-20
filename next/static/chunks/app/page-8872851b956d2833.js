@@ -261,7 +261,7 @@
                 {
                     id: 2,
                     name: "Thần Ma Giáng Thế",
-                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 Thứ 4 - 7 hàng tuần",
+                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 Thứ 2-4-6 hàng tuần",
                     image: "./images/tmgt/tmgt-banner.png",
                     tag: [
                         { id: "tag2", name: "04-09-2025" }
@@ -271,7 +271,7 @@
                 {
                     id: 2,
                     name: "Nghịch Thiên Cải Mệnh",
-                    title: "Nghịch Thiên Cải Mệnh - Khai mở server lúc 13h Thứ 4 - 7 hàng tuần",
+                    title: "Nghịch Thiên Cải Mệnh - Khai mở server lúc 13:00 Thứ 2-4-6 hàng tuần",
                     image: "./images/ntcm/ntcm-banner.jpg",
                     tag: [
                         { id: "tag2", name: "04-09-2025" }
@@ -281,7 +281,7 @@
                 {
                     id: 6,
                     name: "Thần Cơ Ấn",
-                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00 Thứ 3 - 5 - 7 hàng tuần",
+                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00' Thứ 3-5-7 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
                     tag: [
                         { id: "tag6", name: "06-10-2025" }
