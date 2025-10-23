@@ -174,14 +174,6 @@
                     type: 6,
                     gameType: { name: "game hot" },
                     href: "http://www.poopogame.com/url/2I3cOUjH"
-                },
-                {
-                    id: 7,
-                    name: "Đế Vương Đại Lục",
-                    logoImage: "./images/dvdl/dvdl-logo.jpg",
-                    type: 7,
-                    gameType: { name: "game mới" },
-                    href: "http://www.poopogame.com/url/KCRAcDTh"
                 }
             ];
 
@@ -231,16 +223,7 @@
                 totalReceived: 124,
                 type: 5,
                 text: "Nhận code game Ethereal Slayer",
-            },
-            {
-                id: 7,
-                name: "Đế Vương Đại Lục",
-                image: "./images/dvdl/dvdl-logo.jpg",
-                totalGiftcode: 300,
-                totalReceived: 90,
-                type: 7,
-                text: "Nhận code game Đế Vương Đại Lục",
-            },
+            }
             ];
 
             const dataWelfare = [{
@@ -307,17 +290,7 @@
                         { id: "tag5", name: "15-09-2025" }
                     ],
                     href: "https://app.adjust.com/1sokpzx5"
-                },
-                {
-                    id: 3,
-                    name: "Đế Vương Đại Lục",
-                    title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 Thứ 2 hàng tuần",
-                    image: "./images/dvdl/dvdl-banner.jpg",
-                    tag: [
-                        { id: "tag3", name: "04-09-2025" }
-                    ],
-                    href: "http://www.poopogame.com/url/KCRAcDTh"
-                },
+                }
             ];
 
             const dataMenu = [{
