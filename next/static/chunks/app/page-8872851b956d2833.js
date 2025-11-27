@@ -149,7 +149,7 @@
                     logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                     type: 3,
                     gameType: { name: "Game Hot" },
-                    href: "https://t.skeideng.com/Wf6zC4.html"
+                    href: "https://t.skeideng.com/SiNPA3.html"
                 },
                 {
                     id: 4,
@@ -269,7 +269,7 @@
                     tag: [
                         { id: "tag6", name: "06-10-2025" }
                     ],
-                    href: "https://t.skeideng.com/Wf6zC4.html"
+                    href: "https://t.skeideng.com/SiNPA3.html"
                 },
                 {
                     id: 4,
