@@ -203,7 +203,7 @@
                 totalGiftcode: 500,
                 totalReceived: 412,
                 type: 3,
-                text: "Nhận code game Tân Binh Thức Tỉnh",
+                text: "Mình muốn nhận code game Tân Binh Thức Tỉnh",
             },
             {
                 id: 4,
