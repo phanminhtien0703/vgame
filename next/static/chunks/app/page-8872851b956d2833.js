@@ -145,6 +145,14 @@
                 },
                 {
                     id: 3,
+                    name: "Tân Binh Thức Tỉnh",
+                    logoImage: "./images/tbtt/tbtt-logo.jpg",
+                    type: 3,
+                    gameType: { name: "Game Mới Ra" },
+                    href: "https://t.skeideng.com/c2zS64.html"
+                },
+                {
+                    id: 4,
                     name: "Thần Cơ Ấn",
                     logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                     type: 3,
@@ -152,7 +160,7 @@
                     href: "https://t.skeideng.com/SiNPA3.html"
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: "Infinity Kingdom",
                     logoImage: "./images/ik/ik-logo.png",
                     type: 4,
@@ -160,20 +168,12 @@
                     href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "Ethereal Slayer",
                     logoImage: "./images/es/es-logo.jpg",
                     type: 5,
                     gameType: { name: "game mới" },
                     href: "https://app.adjust.com/1sokpzx5"
-                },
-                {
-                    id: 6,
-                    name: "Linh Tiêu Giới",
-                    logoImage: "./images/ltg/ltg-logo.png",
-                    type: 6,
-                    gameType: { name: "game hot" },
-                    href: "http://www.poopogame.com/url/2I3cOUjH"
                 }
             ];
 
@@ -198,6 +198,15 @@
             },
             {
                 id: 3,
+                name: "Tân Binh Thức Tỉnh",
+                image: "./images/tbtt/tbtt-logo.jpg",
+                totalGiftcode: 500,
+                totalReceived: 412,
+                type: 3,
+                text: "Nhận code game Tân Binh Thức Tỉnh",
+            },
+            {
+                id: 4,
                 name: "Thần Cơ Ấn",
                 image: "./images/tcq4d/tcq4d-logo.jpg",
                 totalGiftcode: 200,
@@ -262,7 +271,17 @@
                     href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
                 },
                 {
-                    id: 6,
+                    id: 3,
+                    name: "Tân Binh Thức Tỉnh",
+                    title: "Tân Binh Thức Tỉnh - Khai mở server S1 - Lúc 13h Ngày 11-03-2026",
+                    image: "./images/tbtt/tbtt-banner.jpg",
+                    tag: [
+                        { id: "tag6", name: "10-03-2026" }
+                    ],
+                    href: "https://t.skeideng.com/c2zS64.html"
+                },
+                {
+                    id: 4,
                     name: "Thần Cơ Ấn",
                     title: "Thần Cơ Ấn - Khai mở server lúc 13:00' Thứ 3-5-7 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
@@ -272,7 +291,7 @@
                     href: "https://t.skeideng.com/SiNPA3.html"
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: "Infinity Kingdom",
                     title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
                     image: "./images/ik/ik-banner.png",
@@ -282,7 +301,7 @@
                     href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "Ethereal Slayer",
                     title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
                     image: "./images/es/es-banner.jpg",
