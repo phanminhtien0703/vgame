@@ -126,9 +126,30 @@
             var g = a(40364),
                 v = a(66766);
 
+            // Mapping gameKey to fanpage ID
+            const dataIDFanpage = {
+                tthm: "tranthihangma",
+                tmgt: "gamemobilestudio",
+                ntcm: "nghichthiencaimenh2",
+                tbtt: "gamemobilestudio",
+                tcq4d: "gamemobilestudio",
+                ik: "gamemobilestudio",
+                es: "gamemobilestudio"
+            };
+
             const dataGame = [
                 {
                     id: 1,
+                    gameKey: "tthm",
+                    name: "Trấn Thi Hàng Ma",
+                    logoImage: "./images/tthm/tthm-logo.jpg",
+                    type: 1,
+                    gameType: { name: "Game Mới Ra" },
+                    href: "https://p.googlelik.com/?p=Jje6Fj"
+                },
+                {
+                    id: 1,
+                    gameKey: "tmgt",
                     name: "Thần Ma Giáng Thế",
                     logoImage: "./images/tmgt/tmgt-logo.png",
                     type: 1,
@@ -137,6 +158,7 @@
                 },
                 {
                     id: 2,
+                    gameKey: "ntcm",
                     name: "Nghịch Thiên Cải Mệnh",
                     logoImage: "./images/ntcm/ntcm-logo.jpg",
                     type: 2,
@@ -145,6 +167,7 @@
                 },
                 {
                     id: 3,
+                    gameKey: "tbtt",
                     name: "Tân Binh Thức Tỉnh",
                     logoImage: "./images/tbtt/tbtt-logo.jpg",
                     type: 3,
@@ -153,6 +176,7 @@
                 },
                 {
                     id: 4,
+                    gameKey: "tcq4d",
                     name: "Thần Cơ Ấn",
                     logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                     type: 3,
@@ -161,6 +185,7 @@
                 },
                 {
                     id: 5,
+                    gameKey: "ik",
                     name: "Infinity Kingdom",
                     logoImage: "./images/ik/ik-logo.png",
                     type: 4,
@@ -169,6 +194,7 @@
                 },
                 {
                     id: 6,
+                    gameKey: "es",
                     name: "Ethereal Slayer",
                     logoImage: "./images/es/es-logo.jpg",
                     type: 5,
@@ -178,61 +204,77 @@
             ];
 
             const dataGiftcode = [
-            {
-                id: 1,
-                name: "Thần Ma Giáng Thế",
-                image: "./images/tmgt/tmgt-logo.png",
-                totalGiftcode: 500,
-                totalReceived: 412,
-                type: 1,
-                text: "Nhận code game Thần Ma Giáng Thế",
-            },
-            {
-                id: 2,
-                name: "Nghịch Thiên Cải Mệnh",
-                image: "./images/ntcm/ntcm-logo.jpg",
-                totalGiftcode: 500,
-                totalReceived: 457,
-                type: 2,
-                text: "Nhận code game Nghịch Thiên Cải Mệnh",
-            },
-            {
-                id: 3,
-                name: "Tân Binh Thức Tỉnh",
-                image: "./images/tbtt/tbtt-logo.jpg",
-                totalGiftcode: 500,
-                totalReceived: 412,
-                type: 3,
-                text: "Mình muốn nhận code game Tân Binh Thức Tỉnh",
-            },
-            {
-                id: 4,
-                name: "Thần Cơ Ấn",
-                image: "./images/tcq4d/tcq4d-logo.jpg",
-                totalGiftcode: 200,
-                totalReceived: 172,
-                type: 3,
-                text: "Nhận code game Thần Cơ Ấn",
-                value: "Nhận code",
-            },
-            {
-                id: 4,
-                name: "Infinity Kingdom",
-                image: "./images/ik/ik-logo.png",
-                totalGiftcode: 200,
-                totalReceived: 151,
-                type: 4,
-                text: "Nhận code game Infinity Kingdom",
-            },
-            {
-                id: 5,
-                name: "Ethereal Slayer",
-                image: "./images/es/es-logo.jpg",
-                totalGiftcode: 200,
-                totalReceived: 124,
-                type: 5,
-                text: "Nhận code game Ethereal Slayer",
-            }
+                {
+                    id: 1,
+                    gameKey: "tthm",
+                    name: "Trấn Thi Hàng Ma",
+                    image: "./images/tthm/tthm-logo.jpg",
+                    totalGiftcode: 20000,
+                    totalReceived: 4812,
+                    type: 1,
+                    text: "Nhận code game Trấn Thi Hàng Ma",
+                },
+                {
+                    id: 1,
+                    gameKey: "tmgt",
+                    name: "Thần Ma Giáng Thế",
+                    image: "./images/tmgt/tmgt-logo.png",
+                    totalGiftcode: 50000,
+                    totalReceived: 48212,
+                    type: 1,
+                    text: "Nhận code game Thần Ma Giáng Thế",
+                },
+                {
+                    id: 2,
+                    gameKey: "ntcm",
+                    name: "Nghịch Thiên Cải Mệnh",
+                    image: "./images/ntcm/ntcm-logo.jpg",
+                    totalGiftcode: 50000,
+                    totalReceived: 26457,
+                    type: 2,
+                    text: "Nhận code game Nghịch Thiên Cải Mệnh",
+                },
+                {
+                    id: 3,
+                    gameKey: "tbtt",
+                    name: "Tân Binh Thức Tỉnh",
+                    image: "./images/tbtt/tbtt-logo.jpg",
+                    totalGiftcode: 500,
+                    totalReceived: 412,
+                    type: 3,
+                    text: "Mình muốn nhận code game Tân Binh Thức Tỉnh",
+                },
+                {
+                    id: 4,
+                    gameKey: "tcq4d",
+                    name: "Thần Cơ Ấn",
+                    image: "./images/tcq4d/tcq4d-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 172,
+                    type: 3,
+                    text: "Nhận code game Thần Cơ Ấn",
+                    value: "Nhận code",
+                },
+                {
+                    id: 4,
+                    gameKey: "ik",
+                    name: "Infinity Kingdom",
+                    image: "./images/ik/ik-logo.png",
+                    totalGiftcode: 200,
+                    totalReceived: 151,
+                    type: 4,
+                    text: "Nhận code game Infinity Kingdom",
+                },
+                {
+                    id: 5,
+                    gameKey: "es",
+                    name: "Ethereal Slayer",
+                    image: "./images/es/es-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 124,
+                    type: 5,
+                    text: "Nhận code game Ethereal Slayer",
+                }
             ];
 
             const dataWelfare = [{
@@ -252,8 +294,20 @@
             const dataNews = [
                 {
                     id: 2,
+                    gameKey: "tthm",
+                    name: "Trấn Thi Hàng Ma",
+                    title: "Trấn Thi Hàng Ma - CHÍNH THỨC OPEN S1 lúc 13:00 ngày 11-05-2026",
+                    image: "./images/tthm/tthm-banner.png",
+                    tag: [
+                        { id: "tag2", name: "10-05-2026" }
+                    ],
+                    href: "https://p.googlelik.com/?p=Jje6Fj"
+                },
+                {
+                    id: 2,
+                    gameKey: "tmgt",
                     name: "Thần Ma Giáng Thế",
-                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 Thứ 2-4-6 hàng tuần",
+                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 Thứ 3-5-7 hàng tuần",
                     image: "./images/tmgt/tmgt-banner.png",
                     tag: [
                         { id: "tag2", name: "04-09-2025" }
@@ -262,8 +316,9 @@
                 },
                 {
                     id: 2,
+                    gameKey: "ntcm",
                     name: "Nghịch Thiên Cải Mệnh",
-                    title: "Nghịch Thiên Cải Mệnh - Khai mở server lúc 13:00 Thứ 2-4-6 hàng tuần",
+                    title: "Nghịch Thiên Cải Mệnh - Khai mở server lúc 13:00' Thứ 3-5-7 hàng tuần",
                     image: "./images/ntcm/ntcm-banner.jpg",
                     tag: [
                         { id: "tag2", name: "04-09-2025" }
@@ -272,8 +327,9 @@
                 },
                 {
                     id: 3,
+                    gameKey: "tbtt",
                     name: "Tân Binh Thức Tỉnh",
-                    title: "Tân Binh Thức Tỉnh - Khai mở server S1 - Lúc 13h Ngày 11-03-2026",
+                    title: "Tân Binh Thức Tỉnh - Khai mở server lúc 00:15' thứ 4 hàng tuần",
                     image: "./images/tbtt/tbtt-banner.jpg",
                     tag: [
                         { id: "tag6", name: "10-03-2026" }
@@ -282,8 +338,9 @@
                 },
                 {
                     id: 4,
+                    gameKey: "tcq4d",
                     name: "Thần Cơ Ấn",
-                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00' Thứ 3-5-7 hàng tuần",
+                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00' Thứ 3-6 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
                     tag: [
                         { id: "tag6", name: "06-10-2025" }
@@ -292,6 +349,7 @@
                 },
                 {
                     id: 5,
+                    gameKey: "ik",
                     name: "Infinity Kingdom",
                     title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
                     image: "./images/ik/ik-banner.png",
@@ -302,6 +360,7 @@
                 },
                 {
                     id: 6,
+                    gameKey: "es",
                     name: "Ethereal Slayer",
                     title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
                     image: "./images/es/es-banner.jpg",
@@ -429,7 +488,7 @@
                                                                 (0, i.jsxs)("div", {
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     onClick: () => {
-                                                                        const page = "gamemobilestudio"; // 👉 thay bằng username hoặc ID fanpage của bạn
+                                                                        const page = dataIDFanpage[e.gameKey]; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                         const msg = `Nhận code game ${e.name}`;
                                                                         const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
                                                                         const download = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
@@ -616,7 +675,7 @@
                                                                                 (0, i.jsx)("p", { children: `Người nhận: ${e.totalReceived || 0}` }),
                                                                                 (0, i.jsx)("a", {
                                                                                     className: "btn",
-                                                                                    href: `https://m.me/gamemobilestudio?text=${encodeURIComponent(e.text)}`,
+                                                                                    href: `https://m.me/${dataIDFanpage[e.gameKey]}?text=${encodeURIComponent(e.text)}`,
                                                                                     target: "_blank",
                                                                                     rel: "noopener noreferrer",
                                                                                     children: "Nhận code"
@@ -644,7 +703,7 @@
                                                                 className: "col-sm-6 mb-3",
                                                                 style: { cursor: "pointer" },
                                                                 onClick: () => {
-                                                                    const page = "gamemobilestudio"; // 👉 thay bằng username hoặc ID fanpage của bạn
+                                                                    const page = dataIDFanpage[news.gameKey]; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                     const msg = `Nhận code game ${news.name}`;
                                                                     const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
 
