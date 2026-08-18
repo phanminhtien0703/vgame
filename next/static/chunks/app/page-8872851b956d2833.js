@@ -140,15 +140,6 @@
             const dataGame = [
                 {
                     id: 1,
-                    gameKey: "tthm",
-                    name: "Trấn Thi Hàng Ma",
-                    logoImage: "./images/tthm/tthm-logo.jpg",
-                    type: 1,
-                    gameType: { name: "Game Mới Ra" },
-                    href: "https://p.googlelik.com/?p=Jje6Fj"
-                },
-                {
-                    id: 1,
                     gameKey: "tmgt",
                     name: "Thần Ma Giáng Thế",
                     logoImage: "./images/tmgt/tmgt-logo.png",
@@ -204,16 +195,6 @@
             ];
 
             const dataGiftcode = [
-                {
-                    id: 1,
-                    gameKey: "tthm",
-                    name: "Trấn Thi Hàng Ma",
-                    image: "./images/tthm/tthm-logo.jpg",
-                    totalGiftcode: 20000,
-                    totalReceived: 4812,
-                    type: 1,
-                    text: "Nhận code game Trấn Thi Hàng Ma",
-                },
                 {
                     id: 1,
                     gameKey: "tmgt",
@@ -292,17 +273,6 @@
             ];
 
             const dataNews = [
-                {
-                    id: 2,
-                    gameKey: "tthm",
-                    name: "Trấn Thi Hàng Ma",
-                    title: "Trấn Thi Hàng Ma - CHÍNH THỨC OPEN S1 lúc 13:00 ngày 11-05-2026",
-                    image: "./images/tthm/tthm-banner.png",
-                    tag: [
-                        { id: "tag2", name: "10-05-2026" }
-                    ],
-                    href: "https://p.googlelik.com/?p=Jje6Fj"
-                },
                 {
                     id: 2,
                     gameKey: "tmgt",
