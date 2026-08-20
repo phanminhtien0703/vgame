@@ -145,7 +145,7 @@
                     logoImage: "./images/tmgt/tmgt-logo.png",
                     type: 1,
                     gameType: { name: "Game Hot" },
-                    href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
+                    href: "./games/than-ma-giang-the"
                 },
                 {
                     id: 2,
@@ -302,7 +302,7 @@
                     title: "Tân Binh Thức Tỉnh - Khai mở server lúc 00:15' thứ 4 hàng tuần",
                     image: "./images/tbtt/tbtt-banner.jpg",
                     tag: [
-                        { id: "tag6", name: "10-03-2026" }
+                        { id: "tag6", name: "20-08-2026" }
                     ],
                     href: "https://t.skeideng.com/c2zS64.html"
                 },
