@@ -528,36 +528,4 @@
 
 })();
 </script>
-
-<script>
-(function () {
-    // ==========================================================
-    // THEO DÕI TRUY CẬP -> gửi về Cloudflare Worker
-    // Worker sẽ: (1) báo Telegram, (2) lưu dữ liệu vào Google Sheet
-    // >>> THAY URL WORKER CỦA BẠN TẠI ĐÂY <<<
-    // ==========================================================
-    var WORKER_URL = "https://gamemobliestudio-bot.phanminhtien070302.workers.dev/";
-
-    try {
-        var payload = {
-            type: "gms-tmgt",
-            url: location.href,
-            title: document.title,
-            userAgent: navigator.userAgent,
-            referrer: document.referrer
-        };
-
-        fetch(WORKER_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            keepalive: true,
-            body: JSON.stringify(payload)
-        }).catch(function (err) {
-            console.log("ACCESS TRACK ERROR:", err);
-        });
-    } catch (e) {
-        console.log("ACCESS TRACK ERROR:", e);
-    }
-})();
-</script>
 </html>
